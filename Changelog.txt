@@ -1,0 +1,15 @@
+-- Changelog
+-- Author: adan_eslavo
+-- DateCreated: 12/01/2018
+--------------------------------------------------------------
+Promotion Overhaul for Vox Populi changelog:
+
+
+v1
+- rewritten bonus 47 (189) promotion descriptions from VP,
+- renamed 22 (64) promotions from VP,
+- moved 22 (68) promotions from VP to other categories,
+- split 11 (28) promotion descriptions from names,
+- tied 13 (43) promotion pedias to names,
+- changed 19 (55) promotion icons,
+- minor fixes.
