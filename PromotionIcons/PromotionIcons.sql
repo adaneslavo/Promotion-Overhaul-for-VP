@@ -25,7 +25,11 @@ VALUES		('UNIT_COMMON_PROMOTION_ATLAS',			32, 		'AntiFighterIcon_032.dds',			1, 
 			('UNIT_COMMON_PROMOTION_5_ATLAS',		32, 		'QuickStudyIcon_032.dds',			1, 				1),
 			('UNIT_COMMON_PROMOTION_5_ATLAS',		45, 		'QuickStudyIcon_045.dds',			1, 				1),
 			('UNIT_COMMON_PROMOTION_5_ATLAS',		64, 		'QuickStudyIcon_064.dds',			1, 				1),
-			('UNIT_COMMON_PROMOTION_5_ATLAS',		256, 		'QuickStudyIcon_256.dds',			1, 				1);
+			('UNIT_COMMON_PROMOTION_5_ATLAS',		256, 		'QuickStudyIcon_256.dds',			1, 				1),
+			('UNIT_COMMON_PROMOTION_6_ATLAS',		32, 		'GoldenAgeIcon_032.dds',			1, 				1),
+			('UNIT_COMMON_PROMOTION_6_ATLAS',		45, 		'GoldenAgeIcon_045.dds',			1, 				1),
+			('UNIT_COMMON_PROMOTION_6_ATLAS',		64, 		'GoldenAgeIcon_064.dds',			1, 				1),
+			('UNIT_COMMON_PROMOTION_6_ATLAS',		256, 		'GoldenAgeIcon_256.dds',			1, 				1);
 ------------------------------
 -- Promotion Icons
 ------------------------------
@@ -113,7 +117,7 @@ UPDATE UnitPromotions SET IconAtlas = 'UNIT_COMMON_PROMOTION_5_ATLAS' WHERE Type
 UPDATE UnitPromotions SET IconAtlas = 'PROMOTION_ATLAS' WHERE Type = 'PROMOTION_GENERAL_STACKING';
 	UPDATE UnitPromotions SET PortraitIndex = '13' WHERE Type = 'PROMOTION_GENERAL_STACKING';
 --40
-UPDATE UnitPromotions SET IconAtlas = 'UNIT_PERSIA_PROMOTION_ATLAS' WHERE Type = 'PROMOTION_GOLDEN_AGE_POINTS';
+UPDATE UnitPromotions SET IconAtlas = 'UNIT_COMMON_PROMOTION_6_ATLAS' WHERE Type = 'PROMOTION_GOLDEN_AGE_POINTS';
 	UPDATE UnitPromotions SET PortraitIndex = '0' WHERE Type = 'PROMOTION_GOLDEN_AGE_POINTS';
 UPDATE UnitPromotions SET IconAtlas = 'PROMOTION_ATLAS' WHERE Type = 'PROMOTION_GREAT_ADMIRAL';
 	UPDATE UnitPromotions SET PortraitIndex = '16' WHERE Type = 'PROMOTION_GREAT_ADMIRAL';
