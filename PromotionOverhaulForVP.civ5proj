@@ -12,7 +12,7 @@
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
-    <SpecialThanks>In Credits.</SpecialThanks>
+    <SpecialThanks>Credits.txt</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -60,6 +60,7 @@ Look into Credits and Changelog for more information.</Description>
         <FileName>CivilopediaCategories/CivilopediaScreen.lua</FileName>
       </Content>
     </ModContent>
+    <Homepage>http://https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -83,7 +84,7 @@ Look into Credits and Changelog for more information.</Description>
     </Content>
     <Content Include="CivilopediaCategories\CivilopediaScreen.lua">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\Icons\AntiFighterIcon_032.dds">
       <SubType>Lua</SubType>

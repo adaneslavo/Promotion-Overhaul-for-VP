@@ -4,8 +4,10 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+*Credits with icon guy
 
 v1
+- added categories for Civilopedia,
 - rewritten bonus 47 (189) promotion descriptions from VP,
 - renamed 22 (64) promotions from VP,
 - moved 22 (68) promotions from VP to other categories,
