@@ -22,10 +22,10 @@ Look into Credits and Changelog for more information.</Description>
     <AssemblyName>PromotionOverhaulForVP</AssemblyName>
     <RootNamespace>PromotionOverhaulForVP</RootNamespace>
     <ModReferences />
-    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
-    <ReloadUnitSystem>true</ReloadUnitSystem>
-    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
-    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadUnitSystem>false</ReloadUnitSystem>
+    <ReloadStrategicViewSystem>false</ReloadStrategicViewSystem>
+    <ReloadAudioSystem>false</ReloadAudioSystem>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
@@ -53,12 +53,6 @@ Look into Credits and Changelog for more information.</Description>
       </Action>
     </ModActions>
     <ModContent>
-      <Content xmlns="">
-        <Type>InGameUIAddin</Type>
-        <Name>Civilopedia Categories</Name>
-        <Description>Adds possibility to change categories in civilopedia.</Description>
-        <FileName>CivilopediaCategories/CivilopediaScreen.lua</FileName>
-      </Content>
     </ModContent>
     <Homepage>http://https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/</Homepage>
   </PropertyGroup>
@@ -85,6 +79,10 @@ Look into Credits and Changelog for more information.</Description>
     <Content Include="CivilopediaCategories\CivilopediaScreen.lua">
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Credits.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\Icons\AntiFighterIcon_032.dds">
       <SubType>Lua</SubType>
@@ -168,19 +166,19 @@ Look into Credits and Changelog for more information.</Description>
     </Content>
     <Content Include="PromotionIcons\Icons\GoldenAgeIcon_032.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\Icons\GoldenAgeIcon_045.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\Icons\GoldenAgeIcon_064.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\Icons\GoldenAgeIcon_256.dds">
       <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
+      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="PromotionIcons\PromotionIcons.sql">
       <SubType>Lua</SubType>
