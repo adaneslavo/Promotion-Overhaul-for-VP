@@ -6,12 +6,13 @@
     <Name>Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
     <ModVersion>1</ModVersion>
-    <Stability>Alpha</Stability>
+    <Stability>Beta</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP</Description>
+    <Description>Promotion Overhaul for VP
+
+Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
-    <SpecialThanks>
-    </SpecialThanks>
+    <SpecialThanks>Credits.txt</SpecialThanks>
     <AffectsSavedGames>true</AffectsSavedGames>
     <MinCompatibleSaveVersion>0</MinCompatibleSaveVersion>
     <SupportsSinglePlayer>true</SupportsSinglePlayer>
@@ -21,10 +22,19 @@
     <AssemblyName>PromotionOverhaulForVP</AssemblyName>
     <RootNamespace>PromotionOverhaulForVP</RootNamespace>
     <ModReferences />
-    <ReloadLandmarkSystem>true</ReloadLandmarkSystem>
-    <ReloadUnitSystem>true</ReloadUnitSystem>
-    <ReloadStrategicViewSystem>true</ReloadStrategicViewSystem>
-    <ReloadAudioSystem>true</ReloadAudioSystem>
+    <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
+    <ReloadUnitSystem>false</ReloadUnitSystem>
+    <ReloadStrategicViewSystem>false</ReloadStrategicViewSystem>
+    <ReloadAudioSystem>false</ReloadAudioSystem>
+    <ModDependencies>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(5) More Luxuries - CBO Edition</Name>
+        <Id>be2d13ee-d18d-410e-8f04-7cd19cd99a98</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModDependencies>
     <ModActions>
       <Action>
         <Set>OnModActivated</Set>
@@ -36,7 +46,15 @@
         <Type>UpdateDatabase</Type>
         <FileName>Texts/TextChanges.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>CivilopediaCategories/Categories.xml</FileName>
+      </Action>
     </ModActions>
+    <ModContent>
+    </ModContent>
+    <Homepage>http://https://forums.civfanatics.com/threads/promotion-overhaul-for-vp.626728/</Homepage>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -51,6 +69,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Changelog.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CivilopediaCategories\Categories.xml">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="CivilopediaCategories\CivilopediaScreen.lua">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="Credits.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
@@ -134,6 +164,22 @@
       <SubType>Lua</SubType>
       <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
+    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_032.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_045.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_064.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
+    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_256.dds">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>True</ImportIntoVFS>
+    </Content>
     <Content Include="PromotionIcons\PromotionIcons.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -144,6 +190,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CivilopediaCategories" />
     <Folder Include="Texts" />
     <Folder Include="PromotionIcons" />
     <Folder Include="PromotionIcons\Icons" />

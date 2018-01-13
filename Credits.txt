@@ -1,0 +1,7 @@
+-- Credits
+-- Author: adan_eslavo
+-- DateCreated: 12/01/2018
+--------------------------------------------------------------
+Special thanks to:
+  - Infixo - code for making new civilopedia categories,
+  - Salamndre - all new promotion icons.
