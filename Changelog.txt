@@ -4,13 +4,15 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+*enemy defection
+
 v0.4
 - added new categories for Civilopedia (from @Infixo),
 - added Credits.txt file,
 - sorted categories,
-- rewritten 234 promotion descriptions from VP,
-- renamed 84 promotions from VP,
-- moved 116 promotions from VP to other categories,
-- split 37 promotion descriptions from names,
-- tied 58 promotion pedias to names,
-- changed 69 promotion icons.
+- rewritten 258 promotion descriptions from VP,
+- renamed 93 promotions from VP,
+- moved 123 promotions from VP to other categories,
+- split 40 promotion descriptions from names,
+- tied 65 promotion pedias to names,
+- changed 74 promotion icons.
