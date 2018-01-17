@@ -4,13 +4,13 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
-v1
-- added new categories for Civilopedia (from @Infixo),
+v0.6
+- added new Mounted category for Civilopedia (from @Infixo),
 - added Credits.txt file,
-- rewritten bonus 47 (189) promotion descriptions from VP,
-- renamed 22 (64) promotions from VP,
-- moved 22 (68) promotions from VP to other categories,
-- split 11 (28) promotion descriptions from names,
-- tied 13 (43) promotion pedias to names,
-- changed 19 (55) promotion icons,
-- minor fixes.
+- sorted categories,
+- rewritten 290 promotion descriptions from VP,
+- renamed 102 promotions from VP,
+- moved 147 promotions from VP to other categories,
+- split 42 promotion descriptions from names,
+- tied 69 promotion pedias to names,
+- changed 81 promotion icons.
