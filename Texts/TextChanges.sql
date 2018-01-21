@@ -116,6 +116,11 @@ UPDATE Language_en_US SET Text = 'Heavy Cavalry' WHERE Tag = 'TXT_KEY_PROMOTION_
 --100
 UPDATE Language_en_US SET Text = 'Silent Hunter' WHERE Tag = 'TXT_KEY_PROMOTION_SILENT_HUNTER';
 UPDATE Language_en_US SET Text = 'Steam Power' WHERE Tag = 'TXT_KEY_PROMOTION_STEAM_POWER';
+UPDATE Language_en_US SET Text = 'Trade Mission' WHERE Tag = 'TXT_KEY_PROMOTION_TRADE_MISSION_BONUS';
+UPDATE Language_en_US SET Text = 'Small Arrows' WHERE Tag = 'TXT_KEY_PROMOTION_WEAK_RANGED';
+UPDATE Language_en_US SET Text = 'Escape' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE';
+UPDATE Language_en_US SET Text = 'Lion of the North' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
+--106
 ------------------------------
 -- Promotion Names Definitions
 ------------------------------
@@ -206,6 +211,8 @@ UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_SIGHT_PENALTY' WHERE T
 UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_SPAWN_GENERALS_I' WHERE Type = 'PROMOTION_SPAWN_GENERALS_I';
 UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_SPAWN_GENERALS_II' WHERE Type = 'PROMOTION_SPAWN_GENERALS_II';
 UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_STRONGER_VS_DAMAGED' WHERE Type = 'PROMOTION_STRONGER_VS_DAMAGED';
+UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_WEAK_RANGED' WHERE Type = 'PROMOTION_WEAK_RANGED';
+--70
 ------------------------------
 -- Promotion Pedia Types
 ------------------------------
@@ -359,6 +366,16 @@ UPDATE UnitPromotions SET PediaType = 'PEDIA_MOUNTED' WHERE Type = 'PROMOTION_ST
 UPDATE UnitPromotions SET PediaType = 'PEDIA_SCOUTING' WHERE Type = 'PROMOTION_SURVIVALISM_1';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_SCOUTING' WHERE Type = 'PROMOTION_SURVIVALISM_2';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_SCOUTING' WHERE Type = 'PROMOTION_SURVIVALISM_3';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_CIVILIAN' WHERE Type = 'PROMOTION_TRADE_MISSION_BONUS';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_NAVAL' WHERE Type = 'PROMOTION_TREASURE_FLEET';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_VIKING';
+--150
+UPDATE UnitPromotions SET PediaType = 'PEDIA_SHARED' WHERE Type = 'PROMOTION_WAR_CANOES';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_SHARED' WHERE Type = 'PROMOTION_WITHDRAW_BEFORE_MELEE';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_CIVILIAN' WHERE Type = 'PROMOTION_UNWELCOME_EVANGELIST';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_ATTACK_BONUS';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_ATTACK_BONUS_SWEDEN';
+--155
 ------------------------------
 -- Promotion Descriptions Definitions
 ------------------------------
@@ -405,7 +422,8 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_SECOND_ATTACK_HELP',						'-20% [ICON_STRENGTH] Combat Strength. Unit [COLOR_POSITIVE_TEXT]may Attack twice a turn[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_HELP',				'Unit [COLOR_POSITIVE_TEXT]can see Submarines[ENDCOLOR].'), --40
 			('TXT_KEY_PROMOTION_STEAM_POWERED_HELP',						'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Coast[ENDCOLOR].'),
-			('TXT_KEY_PROMOTION_SILENT_HUNTER_HELP',						'+75% [ICON_RANGE_STRENGTH] Ranged Combat Strength.');
+			('TXT_KEY_PROMOTION_SILENT_HUNTER_HELP',						'+75% [ICON_RANGE_STRENGTH] Ranged Combat Strength.'),
+			('TXT_KEY_PROMOTION_ATTACK_BONUS_HELP',							'+25% [ICON_STRENGTH] Attack Bonus.');
 ------------------------------
 -- Promotion Descriptions
 ------------------------------
@@ -729,8 +747,29 @@ UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus. +5 HP [COL
 UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus. +5 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_SURVIVALISM_2_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]heals every turn[ENDCOLOR], even after performing an action. Unit [COLOR_POSITIVE_TEXT]can use enemy roads[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_SURVIVALISM_3_HELP';
 --290
-
-/*
-UPDATE Language_en_US SET Text = '' WHERE Tag = '';
-UPDATE UnitPromotions SET Help = '' WHERE Type = '';
-*/
+/*UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land and Naval Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_1_HELP';
+UPDATE Language_en_US SET Text = '+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land and Naval Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_2_HELP';
+UPDATE Language_en_US SET Text = '+20% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land and Naval Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_3_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_4_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TERROR_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TERROR_II_HELP';
+UPDATE Language_en_US SET Text = '+2 [ICON_ARROW_RIGHT] Naval Movement Points. +100% [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]from Trade Mission[ENDCOLOR] and +100% [ICON_INFLUENCE] Influence [COLOR_POSITIVE_TEXT]after Diplomatic Mission[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TRADE_MISSION_BONUS_HELP';
+UPDATE Language_en_US SET Text = '+1 [ICON_VIEW_CITY] Sight. +10% [ICON_STRENGTH] Attack Bonus. Unit [COLOR_POSITIVE_TEXT]can Heal outside Friendly Territory[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TREASURE_FLEET_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement. -25% [ICON_PEACE] Religious Strength if unit [COLOR_POSITIVE_TEXT]finish turn on Enemy Territory[ENDCOLOR]. Unit dies if [ICON_PEACE] Religious Strength [COLOR_POSITIVE_TEXT]is equal to 0[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_UNWELCOME_EVANGELIST_HELP';
+UPDATE Language_en_US SET Text = 'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. Unit steals [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]after Attacking the City[ENDCOLOR]. +25% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]from Pillaged Tile[ENDCOLOR]. -20% [ICON_STRENGTH] Damage Takens [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_VIKING_HELP';
+--300
+UPDATE Language_en_US SET Text = '+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Fortified Units and Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_VOLLEY_HELP';
+UPDATE Language_en_US SET Text = '+100% [ICON_STRENGTH] Defense Bonus and +2 [ICON_VIEW_CITY] Sight [COLOR_POSITIVE_TEXT]on Embark[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WAR_CANOES_HELP';
+UPDATE Language_en_US SET Text = '-50% [ICON_RANGE_STRENGTH] Range Combat Strength.' WHERE Tag = 'TXT_KEY_PROMOTION_WEAK_RANGED_HELP';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Snow[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_WHITE_WALKER_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can Withdraw[ENDCOLOR] against Melee Attack. Chance of withdrawal [COLOR_POSITIVE_TEXT]is lower against fast enemies[ENDCOLOR] or if there is [COLOR_POSITIVE_TEXT]limited Open Terrain[ENDCOLOR] behind the unit.' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE_HELP';
+UPDATE Language_en_US SET Text = '+20% [ICON_RANGE_STRENGTH] Attack Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_WOLFPACK_1_HELP';
+UPDATE Language_en_US SET Text = '+20% [ICON_RANGE_STRENGTH] Attack Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_WOLFPACK_2_HELP';
+UPDATE Language_en_US SET Text = '+20% [ICON_RANGE_STRENGTH] Attack Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_WOLFPACK_3_HELP';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_I_HELP';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Desert and Snow[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_II_HELP';
+--310
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Withdraw[ENDCOLOR] against Melee Attack. Chance of withdrawal [COLOR_POSITIVE_TEXT]is lower against fast enemies[ENDCOLOR] or if there is [COLOR_POSITIVE_TEXT]limited Open Terrain[ENDCOLOR] behind the unit.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_III_HELP';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODS_WALKER_HELP';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. +10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODSMAN';
+--313
