@@ -4,7 +4,12 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
-v1
+v2:
+- changed 97 promotion icons.
+- deleted civilopedia folder (integrated into VP),
+- minor fixes.
+
+v1:
 - finished full release,
 - added new Mounted category for Civilopedia (from @Infixo),
 - added Credits.txt file,

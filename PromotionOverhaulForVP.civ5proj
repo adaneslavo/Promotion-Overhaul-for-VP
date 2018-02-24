@@ -5,7 +5,7 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>1</ModVersion>
+    <ModVersion>2</ModVersion>
     <Stability>Beta</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
     <Description>Promotion Overhaul for VP
@@ -46,11 +46,6 @@ Look into Credits and Changelog for more information.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Texts/TextChanges.sql</FileName>
       </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>CivilopediaCategories/Categories.xml</FileName>
-      </Action>
     </ModActions>
     <ModContent>
     </ModContent>
@@ -71,14 +66,6 @@ Look into Credits and Changelog for more information.</Description>
     <Content Include="Changelog.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="CivilopediaCategories\Categories.xml">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="CivilopediaCategories\CivilopediaScreen.lua">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
     </Content>
     <Content Include="Credits.txt">
       <SubType>Lua</SubType>
@@ -190,7 +177,6 @@ Look into Credits and Changelog for more information.</Description>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CivilopediaCategories" />
     <Folder Include="Texts" />
     <Folder Include="PromotionIcons" />
     <Folder Include="PromotionIcons\Icons" />
