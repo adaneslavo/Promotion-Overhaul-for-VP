@@ -4,8 +4,12 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+v2.1:
+- renamed 1 (107) promotions from VP,
+- two important fixes.
+
 v2:
-- changed 97 promotion icons.
+- changed 14 (97) promotion icons.
 - deleted civilopedia folder (integrated into VP),
 - minor fixes.
 
@@ -16,7 +20,7 @@ v1:
 - sorted categories,
 - rewritten 313 promotion descriptions from VP,
 - renamed 106 promotions from VP,
-- moved 155promotions from VP to other categories,
+- moved 155 promotions from VP to other categories,
 - split 43 promotion descriptions from names,
 - tied 70 promotion pedias to names,
 - changed 83 promotion icons.

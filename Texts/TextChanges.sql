@@ -119,6 +119,7 @@ UPDATE Language_en_US SET Text = 'Steam Power' WHERE Tag = 'TXT_KEY_PROMOTION_ST
 UPDATE Language_en_US SET Text = 'Trade Mission' WHERE Tag = 'TXT_KEY_PROMOTION_TRADE_MISSION_BONUS';
 UPDATE Language_en_US SET Text = 'Small Arrows' WHERE Tag = 'TXT_KEY_PROMOTION_WEAK_RANGED';
 UPDATE Language_en_US SET Text = 'Escape' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE';
+UPDATE Language_en_US SET Text = 'Power' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS';
 UPDATE Language_en_US SET Text = 'Lion of the North' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
 --106
 ------------------------------
@@ -474,7 +475,7 @@ UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus.' WHERE Tag
 UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_ARMOR_PLATING_2_HELP';
 UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_ARMOR_PLATING_3_HELP';
 UPDATE Language_en_US SET Text = '+10% [ICON_STRENGTH] Combat Strength and +1 [ICON_ARROW_RIGHT] Movement Point.' WHERE Tag = 'TXT_KEY_PROMOTION_ARSENALE_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Attack Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_HELP';
+UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_ATTACK_BONUS_HELP' WHERE Type = 'PROMOTION_ATTACK_BONUS';
 UPDATE Language_en_US SET Text = '+20% [ICON_STRENGTH] Attack Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN_HELP';
 UPDATE Language_en_US SET Text = '+33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_BARBARIAN_BONUS_HELP';
 UPDATE Language_en_US SET Text = '-30% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Barbarians[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_BARBARIAN_PENALTY_I_HELP';
@@ -771,5 +772,5 @@ UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSI
 --310
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Withdraw[ENDCOLOR] against Melee Attack. Chance of withdrawal [COLOR_POSITIVE_TEXT]is lower against fast enemies[ENDCOLOR] or if there is [COLOR_POSITIVE_TEXT]limited Open Terrain[ENDCOLOR] behind the unit.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_III_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODS_WALKER_HELP';
-UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. +10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODSMAN';
+UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. +10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODSMAN_HELP';
 --313
