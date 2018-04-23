@@ -4,6 +4,10 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+v3:
+- fixed bug with FASTER_HEAL promotion,
+- updated Impi's promotion texts.
+
 v2.1:
 - renamed 1 (107) promotions from VP,
 - two important fixes.
