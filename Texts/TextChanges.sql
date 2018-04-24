@@ -11,17 +11,17 @@ UPDATE Language_en_US SET Text = 'Barbarian Penalty I' WHERE Tag = 'TXT_KEY_PROM
 UPDATE Language_en_US SET Text = 'Barbarian Penalty II' WHERE Tag = 'TXT_KEY_PROMOTION_BARBARIAN_PENALTY_II';
 UPDATE Language_en_US SET Text = 'Barbarian Penalty III' WHERE Tag = 'TXT_KEY_PROMOTION_BARBARIAN_PENALTY_III';
 UPDATE Language_en_US SET Text = 'Anti-Helicopter' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_HELICOPTER';
-UPDATE Language_en_US SET Text = 'Anti-Submarine I' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_SUBMARINE_I';
-UPDATE Language_en_US SET Text = 'Anti-Submarine II' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_SUBMARINE_II';
-UPDATE Language_en_US SET Text = 'Anti-Fighter' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_FIGHTER';
+UPDATE Language_en_US SET Text = 'Depth Charges I' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_SUBMARINE_I';
+UPDATE Language_en_US SET Text = 'Depth Charges II' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_SUBMARINE_II';
+UPDATE Language_en_US SET Text = 'Flying Ace' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_FIGHTER';
 --10
-UPDATE Language_en_US SET Text = 'Anti-Gunpowder' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER';
-UPDATE Language_en_US SET Text = 'Anti-Mounted I' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_I';
-UPDATE Language_en_US SET Text = 'Anti-Mounted II' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_II';
+UPDATE Language_en_US SET Text = 'Spirit of Isandlwana' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER';
+UPDATE Language_en_US SET Text = 'Spear Wall I' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_I';
+UPDATE Language_en_US SET Text = 'Spear Wall II' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_II';
 UPDATE Language_en_US SET Text = 'Anti-Tank' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_TANK';
-UPDATE Language_en_US SET Text = 'Torpedo Weakness' WHERE Tag = 'TXT_KEY_PROMOTION_BIG_CITY_PENALTY';
-UPDATE Language_en_US SET Text = 'Shoot and Move' WHERE Tag = 'TXT_KEY_PROMOTION_CAN_MOVE_AFTER_ATTACKING';
-UPDATE Language_en_US SET Text = 'Ice Explorer' WHERE Tag = 'TXT_KEY_PROMOTION_CAN_MOVE_IMPASSABLE';
+UPDATE Language_en_US SET Text = 'Submarine Nets' WHERE Tag = 'TXT_KEY_PROMOTION_BIG_CITY_PENALTY';
+UPDATE Language_en_US SET Text = 'Hit and Run' WHERE Tag = 'TXT_KEY_PROMOTION_CAN_MOVE_AFTER_ATTACKING';
+UPDATE Language_en_US SET Text = 'Arctic Explorer' WHERE Tag = 'TXT_KEY_PROMOTION_CAN_MOVE_IMPASSABLE';
 UPDATE Language_en_US SET Text = 'Cargo Bay I' WHERE Tag = 'TXT_KEY_PROMOTION_CARGO_I';
 UPDATE Language_en_US SET Text = 'Cargo Bay II' WHERE Tag = 'TXT_KEY_PROMOTION_CARGO_II';
 UPDATE Language_en_US SET Text = 'Cargo Bay III' WHERE Tag = 'TXT_KEY_PROMOTION_CARGO_III';
@@ -78,7 +78,7 @@ UPDATE Language_en_US SET Text = 'Kaniengehawa' WHERE Tag = 'TXT_KEY_PROMOTION_M
 UPDATE Language_en_US SET Text = 'Mechanized Division' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_ARMOR';
 UPDATE Language_en_US SET Text = 'Infantry Division' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_GUN';
 UPDATE Language_en_US SET Text = 'Horsepower' WHERE Tag = 'TXT_KEY_PROMOTION_MOUNTED_PENALTY';
-UPDATE Language_en_US SET Text = 'Convoi' WHERE Tag = 'TXT_KEY_PROMOTION_MOVEMENT_TO_GENERAL';
+UPDATE Language_en_US SET Text = 'Convoy' WHERE Tag = 'TXT_KEY_PROMOTION_MOVEMENT_TO_GENERAL';
 UPDATE Language_en_US SET Text = 'Terrain Dificulties' WHERE Tag = 'TXT_KEY_PROMOTION_MUST_SET_UP';
 --70
 UPDATE Language_en_US SET Text = 'Arrows and Bullets' WHERE Tag = 'TXT_KEY_PROMOTION_NAVAL_MISFIRE';
@@ -120,8 +120,9 @@ UPDATE Language_en_US SET Text = 'Trade Mission' WHERE Tag = 'TXT_KEY_PROMOTION_
 UPDATE Language_en_US SET Text = 'Small Arrows' WHERE Tag = 'TXT_KEY_PROMOTION_WEAK_RANGED';
 UPDATE Language_en_US SET Text = 'Escape' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE';
 UPDATE Language_en_US SET Text = 'Power' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS';
-UPDATE Language_en_US SET Text = 'Lion of the North' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
---106
+UPDATE Language_en_US SET Text = 'Gaa–Paa' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
+UPDATE Language_en_US SET Text = 'Phalanx' WHERE Tag = 'TXT_KEY_PROMOTION_DISCIPLINE';
+--107
 ------------------------------
 -- Promotion Names Definitions
 ------------------------------
@@ -389,9 +390,8 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_ANTI_SUBMARINE_II_HELP',					'+75% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Submarine Units[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_CAN_MOVE_AFTER_ATTACKING_HELP',				'Unit [COLOR_POSITIVE_TEXT]can Move again[ENDCOLOR] after Attack.'),
 			('TXT_KEY_PROMOTION_CAN_MOVE_IMPASSABLE_HELP',					'Unit [COLOR_POSITIVE_TEXT]can Enter Ice[ENDCOLOR].'),
-			('TXT_KEY_PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY_HELP',		'+25 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]'),/*
-			('TXT_KEY_PROMOTION_FASTER_HEAL_HELP',							''), */
-			('TXT_KEY_PROMOTION_CARGO_I_HELP',								'Unit can Carry [COLOR_POSITIVE_TEXT]1 Cargo[ENDCOLOR].'), --10
+			('TXT_KEY_PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY_HELP',		'+25 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]'),
+			('TXT_KEY_PROMOTION_CARGO_I_HELP',								'Unit can Carry [COLOR_POSITIVE_TEXT]1 Cargo[ENDCOLOR].'), --9
 			('TXT_KEY_PROMOTION_CARGO_II_HELP',								'Unit can Carry [COLOR_POSITIVE_TEXT]2 Cargo[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_CARGO_III_HELP',							'Unit can Carry [COLOR_POSITIVE_TEXT]3 Cargo[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_CARGO_IV_HELP',								'Unit can Carry [COLOR_POSITIVE_TEXT]4 Cargo[ENDCOLOR].'),
@@ -411,7 +411,7 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_INTERCEPTION_IV_HELP',						'+100% Interception Chance.'),
 			('TXT_KEY_PROMOTION_INVISIBLE_SUBMARINE_HELP',					'Unit [COLOR_POSITIVE_TEXT]is Invisible[ENDCOLOR] to other Enemy Units without special ability.'),
 			('TXT_KEY_PROMOTION_MOUNTED_PENALTY_HELP',						'-33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. Lost after unit upgrade.'),
-			('TXT_KEY_PROMOTION_MUST_SET_UP_HELP',							'Half [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]inside Enemy Territory[ENDCOLOR]. Lost after unit upgrade.'), --30
+			('TXT_KEY_PROMOTION_MUST_SET_UP_HELP',							'Half [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]inside Enemy Territory[ENDCOLOR]. Lost after unit upgrade.'), --29
 			('TXT_KEY_PROMOTION_NAVAL_PENALTY_HELP',						'-50% [ICON_STRENGTH] vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_NO_CAPTURE_HELP',							'Unit [COLOR_POSITIVE_TEXT]cannot Capture Cities[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_NO_DEFENSIVE_BONUSES_HELP',					'Unit [COLOR_POSITIVE_TEXT]cannot benefit from Terrain Defense Bonus[ENDCOLOR]. Lost after unit upgrade.'),
@@ -421,7 +421,7 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_PARADROP_HELP',								'Unit [COLOR_POSITIVE_TEXT]can Paradrop[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_RIVAL_TERRITORY_HELP',						'Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement.'),
 			('TXT_KEY_PROMOTION_SECOND_ATTACK_HELP',						'-20% [ICON_STRENGTH] Combat Strength. Unit [COLOR_POSITIVE_TEXT]may Attack twice a turn[ENDCOLOR].'),
-			('TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_HELP',				'Unit [COLOR_POSITIVE_TEXT]can see Submarines[ENDCOLOR].'), --40
+			('TXT_KEY_PROMOTION_SEE_INVISIBLE_SUBMARINE_HELP',				'Unit [COLOR_POSITIVE_TEXT]can see Submarines[ENDCOLOR].'), --39
 			('TXT_KEY_PROMOTION_STEAM_POWERED_HELP',						'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Coast[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_SILENT_HUNTER_HELP',						'+75% [ICON_RANGE_STRENGTH] Ranged Combat Strength.'),
 			('TXT_KEY_PROMOTION_ATTACK_BONUS_HELP',							'+25% [ICON_STRENGTH] Attack Bonus.');

@@ -4,6 +4,10 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+v4: 
+- renamed 11 promotions,
+- added 1 additional promotion rename: Discipline --> Phalanx.
+
 v3:
 - fixed bug with FASTER_HEAL promotion,
 - updated Impi's promotion texts.
