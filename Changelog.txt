@@ -4,6 +4,9 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 
+v5:
+- fixed many promotion description according to VP update and changes.
+
 v4: 
 - renamed 11 promotions,
 - added 1 additional promotion rename: Discipline --> Phalanx.

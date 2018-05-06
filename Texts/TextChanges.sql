@@ -402,8 +402,8 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_FOLIAGE_IMPASSABLE_HELP',					'Unit [COLOR_POSITIVE_TEXT]cannot Enter Forest or Jungle[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_FREE_PILLAGE_MOVES_HELP',					'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_HEAVY_PAYLOAD_HELP',						'+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].'), --20
-			('TXT_KEY_PROMOTION_HELI_AMBUSH_1_HELP',						'+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Armored Units[ENDCOLOR].'),
-			('TXT_KEY_PROMOTION_HELI_AMBUSH_2_HELP',						'+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Armored Units[ENDCOLOR].'),
+			('TXT_KEY_PROMOTION_HELI_AMBUSH_1_HELP',						'+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Armored Units[ENDCOLOR]. +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].'),
+			('TXT_KEY_PROMOTION_HELI_AMBUSH_2_HELP',						'+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Armored Units[ENDCOLOR]. +15% [ICON_RANGE_STRENGTH] Ranged Combat Strength [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_IGNORE_TERRAIN_COST_HELP',					'Unit [COLOR_POSITIVE_TEXT]ignores Terrain Cost[ENDCOLOR].'),
 			('TXT_KEY_PROMOTION_INTERCEPTION_I_HELP',						'+20% Interception Chance.'),
 			('TXT_KEY_PROMOTION_INTERCEPTION_II_HELP',						'+40% Interception Chance.'),
@@ -428,13 +428,13 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 ------------------------------
 -- Promotion Descriptions
 ------------------------------
-UPDATE Language_en_US SET Text = '+5% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_1_HELP';
-UPDATE Language_en_US SET Text = '+5% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_2_HELP';
-UPDATE Language_en_US SET Text = '+5% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_3_HELP';
+UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_1_HELP';
+UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_2_HELP';
+UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_3_HELP';
 UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_4_HELP';
 UPDATE Language_en_US SET Text = '+5% [ICON_STRENGTH] Combat Strength. Additional +5% [ICON_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]is adjacent to another Friendly Unit[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_DISCIPLINE_HELP';
-UPDATE Language_en_US SET Text = '+1 Interception per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_AMBUSH_1_HELP';
-UPDATE Language_en_US SET Text = '+1 Interception per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_AMBUSH_2_HELP';
+UPDATE Language_en_US SET Text = '+33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR]. +1 Interception per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_AMBUSH_1_HELP';
+UPDATE Language_en_US SET Text = '+33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR]. +1 Interception per turn.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_AMBUSH_2_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]may Attack twice a turn[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_LOGISTICS_HELP';
 UPDATE Language_en_US SET Text = '+2 Range.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_RANGE_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]reveals 6 tiles[ENDCOLOR] in every direction.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_RECON_HELP';
@@ -446,17 +446,17 @@ UPDATE Language_en_US SET Text = '+34% [ICON_RANGE_STRENGTH] Ranged Combat Stren
 UPDATE Language_en_US SET Text = 'Unit can Air Sweep to [COLOR_POSITIVE_TEXT]clear Intercepting Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_SWEEP_HELP';
 UPDATE Language_en_US SET Text = '+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval and Land Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_TARGETING_1_HELP';
 UPDATE Language_en_US SET Text = '+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval and Land Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_TARGETING_2_HELP';
-UPDATE Language_en_US SET Text = 'Unit can Embark [COLOR_POSITIVE_TEXT]onto Water[ENDCOLOR]. Embarked Unit [COLOR_POSITIVE_TEXT]can Enter Ocean[ENDCOLOR] and has +1 [ICON_VIEW_CITY] Sight.' WHERE Tag = 'TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP';
+UPDATE Language_en_US SET Text = 'Unit can Embark [COLOR_POSITIVE_TEXT]onto Water[ENDCOLOR]. Embarked Unit [COLOR_POSITIVE_TEXT]can Enter Ocean[ENDCOLOR] and has +2 [ICON_VIEW_CITY] Sight.' WHERE Tag = 'TXT_KEY_PROMOTION_ALLWATER_EMBARKATION_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement and +10% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Hills[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ALTITUDE_TRAINING_HELP';
 UPDATE Language_en_US SET Text = '+55 [ICON_INFLUENCE] Influence [COLOR_POSITIVE_TEXT]after Diplomatic Mission[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_AMBASSADOR_HELP';
 --20
 UPDATE Language_en_US SET Text = '+30% [ICON_STRENGTH] Attack Bonus and +5% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_AMBITION_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR] and +25% [ICON_STRENGTH] Attack Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AMBUSH_1_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR] and +25% [ICON_STRENGTH] Attack Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AMBUSH_2_HELP';
+UPDATE Language_en_US SET Text = '+33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR] and +15% [ICON_STRENGTH] Attack Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AMBUSH_1_HELP';
+UPDATE Language_en_US SET Text = '+33% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Armor Units[ENDCOLOR] and +15% [ICON_STRENGTH] Attack Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AMBUSH_2_HELP';
 UPDATE Language_en_US SET Text = 'Unit has no combat penalties for Attacking [COLOR_POSITIVE_TEXT]from the Sea or over a River[ENDCOLOR]. Bonus [ICON_ARROW_RIGHT] Movement Point[COLOR_POSITIVE_TEXT] after crossing Rivers[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AMPHIBIOUS_HELP';
 UPDATE Language_en_US SET Text = '+150% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_AIR_HELP';
 UPDATE Language_en_US SET Text = '+150% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Air Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_AIR_II_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can Attack Melee Units twice[ENDCOLOR]. +25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Gunpowder Units[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER_HELP';
 UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_ANTI_TANK_HELP' WHERE Type = 'PROMOTION_ANTI_TANK';
 UPDATE Language_en_US SET Text = '+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_I_HELP';
 UPDATE Language_en_US SET Text = '+100% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Mounted Units[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP';
@@ -521,9 +521,9 @@ UPDATE Language_en_US SET Text = '-33% [ICON_RANGE_STRENGTH] Ranged Combat Stren
 UPDATE Language_en_US SET Text = '+100% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_CITY_SIEGE_HELP';
 UPDATE Language_en_US SET Text = '+100% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_CITY_SIEGE_II_HELP';
 UPDATE Language_en_US SET Text = 'Unit can Embark [COLOR_POSITIVE_TEXT]onto Water[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_COAST_WALKER_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_1_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_2_HELP';
-UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_3_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_1_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_2_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -20% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_3_HELP';
 UPDATE Language_en_US SET Text = 'Unit steals [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]after Attacking the City[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_RAIDER_4_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can convert Enemy Unit[ENDCOLOR] to your side [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR]. +100% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Flanking[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COERCION_HELP';
 --90
@@ -641,7 +641,7 @@ UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Attack Bonus and +1 [ICON
 UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Attack Bonus and +1 [ICON_ARROW_RIGHT] Movement Point. Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_ARMOR_HELP';
 UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Attack Bonus. Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_GUN_HELP';
 UPDATE Language_en_US SET Text = '+5 [ICON_INFLUENCE] Influence [COLOR_POSITIVE_TEXT]after Diplomatic Mission[ENDCOLOR] and +1 [ICON_ARROW_RIGHT] Movement Point. Unit [COLOR_POSITIVE_TEXT]ignores Terrain Cost[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LITERACY_HELP';
-UPDATE Language_en_US SET Text = 'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. Unit steals [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]after Attacking the City[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. -20% [ICON_STRENGTH] Damage Takens [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LONGBOAT_HELP';
+UPDATE Language_en_US SET Text = 'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. +25% [COMBAT_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]is standing on Pillaged Tile[ENDCOLOR]. Unit steals [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]after Attacking the City[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. -20% [ICON_STRENGTH] Damage Takens [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LONGBOAT_HELP';
 UPDATE Language_en_US SET Text = 'Unit has more [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on lower Health[ENDCOLOR]. +15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LOYALTY_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Marsh[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_MARSH_WALKER_HELP';
 UPDATE Language_en_US SET Text = '+5 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_HELP';
@@ -675,7 +675,7 @@ UPDATE Language_en_US SET Text = '+10 [ICON_INFLUENCE] Influence [COLOR_POSITIVE
 UPDATE Language_en_US SET Text = '+15 [ICON_INFLUENCE] Influence [COLOR_POSITIVE_TEXT]after Diplomatic Mission[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Enter Enemy Territory[ENDCOLOR] without Open Borders Agreement.' WHERE Tag = 'TXT_KEY_PROMOTION_NOBILITY_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can Enter Ocean[ENDCOLOR] before Astronomy.' WHERE Tag = 'TXT_KEY_PROMOTION_OCEAN_CROSSING_HELP';
 UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_OCEAN_IMPASSABLE_HELP' WHERE Type = 'PROMOTION_OCEAN_IMPASSABLE';
-UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]cannot Enter Ocean[ENDCOLOR] until Navigation. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_OCEAN_IMPASSABLE_ASTRO_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]cannot Enter Ocean[ENDCOLOR] until Compass. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_OCEAN_IMPASSABLE_ASTRO_HELP';
 UPDATE Language_en_US SET Text = '+1 [ICON_ARROW_RIGHT] Movement Point [COLOR_POSITIVE_TEXT]on Water[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_OCEAN_MOVEMENT_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can only Attack Cities[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_ONLY_ATTACKS_CITIES_HELP';
 UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_ONLY_DEFENSIVE_HELP' WHERE Type = 'PROMOTION_ONLY_DEFENSIVE';
@@ -773,4 +773,5 @@ UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSI
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Withdraw[ENDCOLOR] against Melee Attack. Chance of withdrawal [COLOR_POSITIVE_TEXT]is lower against fast enemies[ENDCOLOR] or if there is [COLOR_POSITIVE_TEXT]limited Open Terrain[ENDCOLOR] behind the unit.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODLAND_TRAILBLAZER_III_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_WOODS_WALKER_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Forest and Jungle[ENDCOLOR]. +10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]in Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_WOODSMAN_HELP';
---313
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]Heals every turn[ENDCOLOR], even after performing an action.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_REPAIR_HELP';
+--314
