@@ -5,10 +5,10 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>5</ModVersion>
+    <ModVersion>6</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP
+    <Description>Promotion Overhaul for VP 8-19
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
@@ -39,11 +39,6 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>PromotionIcons/PromotionIcons.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Texts/TextChanges.sql</FileName>
       </Action>
     </ModActions>
@@ -71,106 +66,6 @@ Look into Credits and Changelog for more information.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
-    <Content Include="PromotionIcons\Icons\AntiFighterIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiFighterIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiFighterIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiFighterIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiMountedIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiMountedIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiMountedIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiMountedIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiTankIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiTankIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiTankIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\AntiTankIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\FlankingIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\FlankingIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\FlankingIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\FlankingIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\QuickStudyIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\QuickStudyIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\QuickStudyIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\QuickStudyIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_032.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_045.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_064.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\Icons\GoldenAgeIcon_256.dds">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>True</ImportIntoVFS>
-    </Content>
-    <Content Include="PromotionIcons\PromotionIcons.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
     <Content Include="Texts\TextChanges.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -178,8 +73,6 @@ Look into Credits and Changelog for more information.</Description>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Texts" />
-    <Folder Include="PromotionIcons" />
-    <Folder Include="PromotionIcons\Icons" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />
 </Project>

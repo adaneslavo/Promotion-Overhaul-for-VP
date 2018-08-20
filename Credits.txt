@@ -4,4 +4,4 @@
 --------------------------------------------------------------
 Special thanks to:
   - Infixo - code for making new civilopedia categories,
-  - Salamndre - all new promotion icons.
+  - Asterix Rage - for his devotion to this mod and expanding promotion icons rework in VPPI mod.

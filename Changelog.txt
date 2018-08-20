@@ -3,13 +3,16 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v6:
+- deleted Promotion Icons changes (now this mod will be fully compatible with @Asterix Rage's VPPI mod). Use it with PO to get even better experience,
+- compatibility update to changes from VP versions: 8-19, 8-6 and 7-15.
 
 v5:
 - fixed many promotion description according to VP update and changes.
 
 v4: 
 - renamed 11 promotions,
-- added 1 additional promotion rename: Discipline --> Phalanx.
+- added 1 additional promotion rename: Discipline --> Phalanx (108 in total).
 
 v3:
 - fixed bug with FASTER_HEAL promotion,

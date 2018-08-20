@@ -122,7 +122,7 @@ UPDATE Language_en_US SET Text = 'Escape' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRA
 UPDATE Language_en_US SET Text = 'Power' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS';
 UPDATE Language_en_US SET Text = 'Gaa–Paa' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
 UPDATE Language_en_US SET Text = 'Phalanx' WHERE Tag = 'TXT_KEY_PROMOTION_DISCIPLINE';
---107
+--108
 ------------------------------
 -- Promotion Names Definitions
 ------------------------------
