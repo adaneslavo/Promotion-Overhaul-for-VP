@@ -3,8 +3,28 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v9:
+- adapting to VP 9-25-1 changes:
+	- added:
+		- Naval Siege, Press Gangs, Breacher, Dauntless, Encirclement, Piracy and Air Defense I-III.
+	- updated:
+		- Dreadnought I-III, Blockade, Vanguard and Boarding Party I-III
+- added technology restriction info:
+	- Fallout Reduction (Penicilin), 
+	- Embarkation and Defensive Embarkation (Sailing), 
+	- Fallout Immunity (Nanotechnology), 
+	- Ambush I-II (Combustion), 
+	- Ice Breakers (Ballistics).
+
+v8:
+- updated:
+	- fixed Targetting I-III, Coastal Rider I-III (now Swift Strike I-III), Boarding Party I-III ==> updated to VP 9-15,
+	- added Coastal Terror.
+- fixed:
+	- modified few texts with Submarines and Carriers (now Submarine and Carrier Units).
+
 v7:
-- changes:
+- changed:
 	- added Conscription,
 	- Parthian Tactics, Barrage IV ==> updated to VP 9-6.
 
@@ -23,7 +43,7 @@ v5:
 
 v4: 
 - renamed 11 promotions,
-- added 1 additional promotion rename: Discipline --> Phalanx (108 in total).
+- added 1 additional promotion rename: Discipline --> Phalanx.
 
 v3:
 - fixed bug with FASTER_HEAL promotion,
