@@ -5,10 +5,11 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>9</ModVersion>
+    <ModVersion>10</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP 9-25-1
+    <Description>Promotion Overhaul for VP 9-25-3.
+Compatible with UCS v3 up.
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
@@ -21,7 +22,15 @@ Look into Credits and Changelog for more information.</Description>
     <SupportsMac>true</SupportsMac>
     <AssemblyName>PromotionOverhaulForVP</AssemblyName>
     <RootNamespace>PromotionOverhaulForVP</RootNamespace>
-    <ModReferences />
+    <ModReferences>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Unique City-States</Name>
+        <Id>b2eb6d1e-1fcb-4a0d-829c-51691aa3183a</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+    </ModReferences>
     <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
     <ReloadUnitSystem>false</ReloadUnitSystem>
     <ReloadStrategicViewSystem>false</ReloadStrategicViewSystem>
@@ -29,7 +38,21 @@ Look into Credits and Changelog for more information.</Description>
     <ModDependencies>
       <Association>
         <Type>Mod</Type>
-        <Name>(5) More Luxuries - CBO Edition</Name>
+        <Name>(2) Community Balance Overhaul</Name>
+        <Id>8411a7a8-dad3-4622-a18e-fcc18324c799</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(3) City-State Diplomacy</Name>
+        <Id>eead0050-1e3f-4178-a91f-26cf1881ac39</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(5) More Luxuries</Name>
         <Id>be2d13ee-d18d-410e-8f04-7cd19cd99a98</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
@@ -40,6 +63,11 @@ Look into Credits and Changelog for more information.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Texts/TextChanges.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/UCS.sql</FileName>
       </Action>
     </ModActions>
     <ModContent>
@@ -62,6 +90,10 @@ Look into Credits and Changelog for more information.</Description>
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
+    <Content Include="Compatibility\UCS.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
     <Content Include="Credits.txt">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
@@ -72,6 +104,7 @@ Look into Credits and Changelog for more information.</Description>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Compatibility" />
     <Folder Include="Texts" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Firaxis\ModBuddy\Civ5Mod.targets" />

@@ -3,6 +3,13 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v10:
+- added:
+	- compatibility for UCS,
+	- additional loading conditions.
+- fixed:
+	- small corrections to the main file headers.
+
 v9:
 - adapting to VP 9-25-1 changes:
 	- added:

@@ -2,7 +2,7 @@
 -- LANGUAGE_EN_US
 --==========================================================================================================================	
 ------------------------------
--- Promotion Names
+-- Promotion Names Changes
 ------------------------------
 UPDATE Language_en_US SET Text = 'Highlanders' WHERE Tag = 'TXT_KEY_PROMOTION_SKI_INFANTRY';
 UPDATE Language_en_US SET Text = 'Legend of the Five Suns' WHERE Tag = 'TXT_KEY_PROMOTION_PARTIAL_HEAL_IF_DESTROY_ENEMY';
@@ -131,7 +131,7 @@ VALUES		('TXT_KEY_PROMOTION_SKIRMISHER_MARCH',	'Hippotherapy'),
 			('TXT_KEY_PROMOTION_SKIRMISHER_SENTRY',	'High Seat');
 --109
 ------------------------------
--- Promotion Description Entries
+-- Promotion Names Entries
 ------------------------------
 UPDATE UnitPromotions SET Description = 'TXT_KEY_PROMOTION_SKIRMISHER_MARCH' WHERE Type = 'PROMOTION_SKIRMISHER_MARCH';
 UPDATE UnitPromotions SET Description = 'TXT_KEY_PROMOTION_SKIRMISHER_SENTRY' WHERE Type = 'PROMOTION_SKIRMISHER_SENTRY';
@@ -220,7 +220,7 @@ UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_SKIRMISHER_MARCH' WHER
 UPDATE UnitPromotions SET PediaEntry = 'TXT_KEY_PROMOTION_SKIRMISHER_SENTRY' WHERE Type = 'PROMOTION_SKIRMISHER_SENTRY';
 --68
 ------------------------------
--- Promotion Pedia Types
+-- Promotion Pedia Types Changes
 ------------------------------
 UPDATE UnitPromotions SET PediaType = 'PEDIA_MELEE' WHERE Type = 'PROMOTION_ADJACENT_BONUS';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_SHARED' WHERE Type = 'PROMOTION_ARMOR_PLATING_1';
@@ -385,7 +385,7 @@ UPDATE UnitPromotions SET PediaType = 'PEDIA_MOUNTED' WHERE Type = 'PROMOTION_SK
 UPDATE UnitPromotions SET PediaType = 'PEDIA_MOUNTED' WHERE Type = 'PROMOTION_SKIRMISHER_SENTRY';
 --157
 ------------------------------
--- Promotion Descriptions Definitions
+-- Promotion Help Definitions
 ------------------------------
 INSERT INTO Language_en_US
 			(Tag,															Text)
@@ -432,7 +432,7 @@ VALUES		('TXT_KEY_PROMOTION_ANTI_TANK_HELP',							'+100% [ICON_STRENGTH] Combat
 			('TXT_KEY_PROMOTION_SILENT_HUNTER_HELP',						'+75% [ICON_RANGE_STRENGTH] Ranged Combat Strength.'),
 			('TXT_KEY_PROMOTION_ATTACK_BONUS_HELP',							'+25% [ICON_STRENGTH] Attack Bonus.');			
 ------------------------------
--- Promotion Descriptions
+-- Promotion Help Changes
 ------------------------------
 UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_1_HELP';
 UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units above 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ACCURACY_2_HELP';
@@ -783,10 +783,10 @@ UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]Heals every turn[END
 UPDATE Language_en_US SET Text = '+50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BETTER_BOMBARDMENT_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]does not uses [ICON_WAR] Military Unit Supply Cap[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_CONSCRIPT_HELP';
 UPDATE Language_en_US SET Text = '+100% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. -25% [ICON_RANGE_STRENGTH] Damage Taken [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COASTAL_TERROR_HELP';
-
 UPDATE Language_en_US SET Text = '+50% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]can Heal outside Friendly Territory[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_NAVAL_SIEGE_HELP';
 UPDATE Language_en_US SET Text = '-5 Damage [COLOR_POSITIVE_TEXT]from Enemy Attacks[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Heal[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_DAMAGE_REDUCTION_HELP';
 UPDATE Language_en_US SET Text = 'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. Unit Heals all damage [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_PRESS_GANGS_HELP';
+--320
 UPDATE Language_en_US SET Text = '+1 [ICON_VIEW_CITY] Sight and +1 [ICON_ARROW_RIGHT] Movement Point.' WHERE Tag = 'TXT_KEY_PROMOTION_NAVAL_SENTRY_HELP';
 UPDATE Language_en_US SET Text = '+10% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]for each adjacent Enemy Naval Unit[ENDCOLOR]. [COLOR_POSITIVE_TEXT]On Kill[ENDCOLOR] unit adavances and inflicts flat damage [COLOR_POSITIVE_TEXT]to all new adjacent Enemy Naval Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BREACHER_HELP';
 UPDATE Language_en_US SET Text = '+10% [ICON_STRENGTH] Attack Bonus [COLOR_POSITIVE_TEXT]for each adjacent Friendly Naval Unit[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ENCIRCLEMENT_HELP';
@@ -794,4 +794,4 @@ UPDATE Language_en_US SET Text = 'Unit gains [ICON_GOLD] Gold [COLOR_POSITIVE_TE
 UPDATE Language_en_US SET Text = 'Unit inflicts 10 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_I_HELP';
 UPDATE Language_en_US SET Text = 'Unit inflicts 15 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_II_HELP';
 UPDATE Language_en_US SET Text = 'Unit inflicts 20 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_III_HELP';
---317
+--327
