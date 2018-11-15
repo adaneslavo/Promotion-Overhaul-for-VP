@@ -3,6 +3,15 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v11:
+- adapting to VP 10-10 changes:
+	- added:
+		- Boarded I-III, Minelayer.
+	- updated:
+		- Indomitable, Boarding Party I-III.
+- tweaked:
+	- "Defense Bonus" changed to "Defense Malus" if number was lesser than 0.
+
 v10:
 - added:
 	- compatibility for UCS,

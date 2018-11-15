@@ -121,7 +121,10 @@ UPDATE Language_en_US SET Text = 'Small Arrows' WHERE Tag = 'TXT_KEY_PROMOTION_W
 UPDATE Language_en_US SET Text = 'Escape' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE';
 UPDATE Language_en_US SET Text = 'Power' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS';
 UPDATE Language_en_US SET Text = 'Gaa–Paa' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
---107
+UPDATE Language_en_US SET Text = 'Boarded I' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_I';
+UPDATE Language_en_US SET Text = 'Boarded II' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_II';
+UPDATE Language_en_US SET Text = 'Boarded III' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_III';
+--110
 ------------------------------
 -- Promotion Names Definitions
 ------------------------------
@@ -445,7 +448,7 @@ UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]may Attack twice a t
 UPDATE Language_en_US SET Text = '+2 Range.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_RANGE_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]reveals 6 tiles[ENDCOLOR] in every direction.' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_RECON_HELP';
 --10
-UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]Heals every turn[ENDCOLOR], even after performing an action. -15% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_MARCH_HELP';
+UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]Heals every turn[ENDCOLOR], even after performing an action. -15% [ICON_STRENGTH] Defense Malus.' WHERE Tag = 'TXT_KEY_PROMOTION_MARCH_HELP';
 UPDATE Language_en_US SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_SIEGE_1_HELP';
 UPDATE Language_en_US SET Text = '+33% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_SIEGE_2_HELP';
 UPDATE Language_en_US SET Text = '+34% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_AIR_SIEGE_3_HELP';
@@ -495,9 +498,9 @@ UPDATE Language_en_US SET Text = '+15% [ICON_RANGE_STRENGTH] Ranged Combat Stren
 UPDATE Language_en_US SET Text = 'Unit has more [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on lower Health[ENDCOLOR]. +5 HP [COLOR_POSITIVE_TEXT]on Heal to all adjacent Friendly Units[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BENEVOLENCE_HELP';
 UPDATE Language_en_US SET Text = '-75% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BIG_CITY_PENALTY_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]can Move and Attack again[ENDCOLOR] after Attack.' WHERE Tag = 'TXT_KEY_PROMOTION_BLITZ_HELP';
-UPDATE Language_en_US SET Text = '+10% [ICON_STRENGTH] Combat Strength. +10% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP';
-UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Combat Strength. +15% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP';
-UPDATE Language_en_US SET Text = '+20% [ICON_STRENGTH] Combat Strength. +20% [ICON_STRENGTH] Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP';
+UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Combat Strength. [COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is Boarded, which [COLOR_POSITIVE_TEXT]reduces its [ICON_ARROW_RIGHT] Movement Points by 1[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP';
+UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Combat Strength. Unit [COLOR_POSITIVE_TEXT]is immune to Boarding[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP';
+UPDATE Language_en_US SET Text = '+15% [ICON_STRENGTH] Combat Strength. [COLOR_POSITIVE_TEXT]After Attack[ENDCOLOR] Defending Enemy Unit is Boarded, which [COLOR_POSITIVE_TEXT]reduces its [ICON_ARROW_RIGHT] Movement Points by 2[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. +50% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on Flanking[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_4_HELP';
 --60
 UPDATE Language_en_US SET Text = '+5% [ICON_RANGE_STRENGTH] Ranged Combat Strength. +20% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOMBARDMENT_1_HELP';
@@ -538,7 +541,7 @@ UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus [COLOR_POSI
 UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus [COLOR_POSITIVE_TEXT]from Ranged Attacks[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_COVER_2_HELP';
 UPDATE Language_en_US SET Text = 'Unit can Embark [COLOR_POSITIVE_TEXT]on Coast-Ocean boundary[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_DEEPWATER_EMBARKATION_HELP';
 UPDATE Language_en_US SET Text = '+30% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]near [ICON_CAPITAL] Capital[ENDCOLOR]. Bonus is lower if unit gets further away [COLOR_POSITIVE_TEXT]from [ICON_CAPITAL] Capital[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_DEFEND_NEAR_CAPITAL_HELP';
-UPDATE Language_en_US SET Text = '-33% [ICON_STRENGTH] Defense Bonus. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP';
+UPDATE Language_en_US SET Text = '-33% [ICON_STRENGTH] Defense Malus. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP';
 	UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_DEFENSE_PENALTY_HELP' WHERE Type = 'PROMOTION_DEFENSE_PENALTY';
 UPDATE Language_en_US SET Text = 'Unit can Embark [COLOR_POSITIVE_TEXT]onto Water[ENDCOLOR]. Double [ICON_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]is Embarked[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Sailing[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_DEFENSIVE_EMBARKATION_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Desert[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_DESERT_WALKER_HELP';
@@ -650,9 +653,9 @@ UPDATE Language_en_US SET Text = '+5 [ICON_INFLUENCE] Influence [COLOR_POSITIVE_
 UPDATE Language_en_US SET Text = 'Unit uses [COLOR_POSITIVE_TEXT]no[ENDCOLOR] [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]on Pillage[ENDCOLOR]. +25% [COMBAT_STRENGTH] Combat Strength if unit [COLOR_POSITIVE_TEXT]is standing on Pillaged Tile[ENDCOLOR]. Unit steals [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]after Attacking the City[ENDCOLOR]. Unit [COLOR_POSITIVE_TEXT]ignores Zone of Control[ENDCOLOR]. -20% [ICON_STRENGTH] Damage Takens [COLOR_POSITIVE_TEXT]from Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LONGBOAT_HELP';
 UPDATE Language_en_US SET Text = 'Unit has more [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]on lower Health[ENDCOLOR]. +15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]inside Friendly Territory[ENDCOLOR]. +10 HP [COLOR_POSITIVE_TEXT]on Kill[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_LOYALTY_HELP';
 UPDATE Language_en_US SET Text = 'Double [ICON_ARROW_RIGHT] Movement [COLOR_POSITIVE_TEXT]on Marsh[ENDCOLOR]. Barbarian promotion.' WHERE Tag = 'TXT_KEY_PROMOTION_MARSH_WALKER_HELP';
-UPDATE Language_en_US SET Text = '+5 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. -10% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_HELP';
+UPDATE Language_en_US SET Text = '+5 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. -10% [ICON_STRENGTH] Defense Malus.' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_HELP';
 UPDATE Language_en_US SET Text = '+10 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_GENERAL_HELP';
-UPDATE Language_en_US SET Text = '+5 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. +5 HP [COLOR_POSITIVE_TEXT]on Heal inside Enemy Territory[ENDCOLOR]. -10% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_II_HELP';
+UPDATE Language_en_US SET Text = '+5 HP [COLOR_POSITIVE_TEXT]for this and all adjacent Friendly Units on Heal[ENDCOLOR]. +5 HP [COLOR_POSITIVE_TEXT]on Heal inside Enemy Territory[ENDCOLOR]. -10% [ICON_STRENGTH] Defense Malus.' WHERE Tag = 'TXT_KEY_PROMOTION_MEDIC_II_HELP';
 UPDATE Language_en_US SET Text = '+1 [ICON_ARROW_RIGHT] Movement Point.' WHERE Tag = 'TXT_KEY_PROMOTION_MOBILITY_HELP';
 --200
 UPDATE Language_en_US SET Text = '-50% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Fortified Units and Cities[ENDCOLOR]. -25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Armored Units[ENDCOLOR]. +20% [ICON_STRENGTH] Defense Bonus. -15% [ICON_STRENGTH] Combat Strength [COLOR_POSITIVE_TEXT]to Enemy Units within 2 tiles[ENDCOLOR]. Lost after unit upgrade.' WHERE Tag = 'TXT_KEY_PROMOTION_MODERN_RANGED_PENALTY_I_HELP';
@@ -757,7 +760,7 @@ UPDATE Language_en_US SET Text = 'Unit [COLOR_POSITIVE_TEXT]heals every turn[END
 UPDATE Language_en_US SET Text = '+10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land and Naval Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_1_HELP';
 UPDATE Language_en_US SET Text = '+15% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR] and +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_2_HELP';
 UPDATE Language_en_US SET Text = '+20% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Naval Units[ENDCOLOR] and +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Land Units[ENDCOLOR]. +10% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_3_HELP';
-UPDATE Language_en_US SET Text = 'Unit gets additional 25 HP. +25% [ICON_STRENGTH] Defense Bonus.' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_4_HELP';
+UPDATE Language_en_US SET Text = '+25% [ICON_STRENGTH] Defense Bonus. Unit [COLOR_POSITIVE_TEXT]is immune to Boarding[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TARGETING_4_HELP';
 UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TERROR_HELP';
 UPDATE Language_en_US SET Text = '+25% [ICON_RANGE_STRENGTH] Ranged Combat Strength vs [COLOR_POSITIVE_TEXT]Units at or below 50 HP[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TERROR_II_HELP';
 UPDATE Language_en_US SET Text = '+2 [ICON_ARROW_RIGHT] Naval Movement Points. +100% [ICON_GOLD] Gold [COLOR_POSITIVE_TEXT]from Trade Mission[ENDCOLOR] and +100% [ICON_INFLUENCE] Influence [COLOR_POSITIVE_TEXT]after Diplomatic Mission[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_TRADE_MISSION_BONUS_HELP';
@@ -794,4 +797,8 @@ UPDATE Language_en_US SET Text = 'Unit gains [ICON_GOLD] Gold [COLOR_POSITIVE_TE
 UPDATE Language_en_US SET Text = 'Unit inflicts 10 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_I_HELP';
 UPDATE Language_en_US SET Text = 'Unit inflicts 15 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_II_HELP';
 UPDATE Language_en_US SET Text = 'Unit inflicts 20 Damage [COLOR_POSITIVE_TEXT]to Attacking Air Unit[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Flight[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTIAIR_LAND_III_HELP';
---327
+UPDATE Language_en_US SET Text = '-1 [ICON_ARROW_RIGHT] Movement Point.' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_I_HELP';
+UPDATE Language_en_US SET Text = '-2 [ICON_ARROW_RIGHT] Movement Points.' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_II_HELP';
+UPDATE Language_en_US SET Text = '-3 [ICON_ARROW_RIGHT] Movement Points.' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDED_III_HELP';
+--330
+UPDATE Language_en_US SET Text = '-10% [ICON_STRENGTH] Defense Malus [COLOR_POSITIVE_TEXT]from Ranged Attacks[ENDCOLOR]. -2 [ICON_ARROW_RIGHT] Movement Points [COLOR_POSITIVE_TEXT]if Unit starts its turn in this unit''s Zone of Control[ENDCOLOR]. Available after researching [COLOR_POSITIVE_TEXT]Combustion[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_MINELAYER_HELP';

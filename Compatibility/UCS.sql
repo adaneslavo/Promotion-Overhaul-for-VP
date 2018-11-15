@@ -35,7 +35,7 @@ WHERE Type = 'PO-UCS' AND EXISTS (SELECT * FROM MinorCivilizations WHERE Type='M
 
 	INSERT INTO Language_en_US 
 				(Tag,									Text)
-	SELECT		'TXT_KEY_PROMOTION_MBANZA_KONGO',		'Manikongo Glory (Mbanza Kongo)'
+	SELECT		'TXT_KEY_PROMOTION_MBANZA_KONGO',		"Manikongo Glory (M'banza Kongo)"
 	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-UCS' AND Value= 1);
 
 	INSERT INTO Language_en_US 
@@ -134,7 +134,7 @@ WHERE Type = 'PO-UCS' AND EXISTS (SELECT * FROM MinorCivilizations WHERE Type='M
 
 	INSERT INTO Language_en_US 
 				(Tag,									Text)
-	SELECT		'TXT_KEY_PROMOTION_SIDON_HELP',				'Player gains a [COLOR_POSITIVE_TEXT]Sphere of Influence[ENDCOLOR] with [COLOR_CYAN]Sidon (only if allied to it)[ENDCOLOR] [COLOR_POSITIVE_TEXT]on Bully[ENDCOLOR]. +5 HP [COLOR_POSITIVE_TEXT]on Heal inside Enemy Territory[ENDCOLOR].'
+	SELECT		'TXT_KEY_PROMOTION_SIDON_HELP',			'+5 HP [COLOR_POSITIVE_TEXT]on Heal inside Enemy Territory[ENDCOLOR].'
 	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-UCS' AND Value= 1);
 	
 	INSERT INTO Language_en_US 
