@@ -3,6 +3,14 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v12:
+- updated and fixed all issues up to VP 1-29-2:
+	- updated flanking value,
+	- updated air units promotions,
+	- added heavy ship and shielded silo promotion descriptions.
+- added some colouring to names,
+- renamed few folders and files.
+
 v11:
 - adapting to VP 10-10 changes:
 	- added:
