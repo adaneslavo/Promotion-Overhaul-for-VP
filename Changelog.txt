@@ -3,6 +3,30 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v13:
+- text:
+	- massive renaming (especially air promotions),
+	- shortened names for extremely long promotion names,
+	- corrected/rearranged few most complicated promotion descriptions,
+	- reworked Cargo and Flight Deck promotions style; added ICON_PLUS for Cargo,
+	- added ICON_SWAP for Range,
+	- added ICON_RELIGION_PANTHEON for Interception,
+	- added ICON_SILVER_FIST for Evasion chance,
+	- many corrections.
+- ui:
+	- added more coloured promotion names,
+	- changed colouring palette,
+	- promotion description highlighting is now yellow instead of green,
+	- "vs" word is now highlighted,
+	- "lost on promotion" part is now marked with red,
+	- technology name is now highlited with light blue and added science icon.
+- code:
+	- ICON_MOVES inasted of ICON_ARROW_RIGHT,
+	- cleaned sql file.
+- added:
+	- added Atlatl Strike, Air Targetting III and Air Skirmisher promotion descriptions,
+	- added compatibility with MUCfVP.
+
 v12:
 - updated and fixed all issues up to VP 1-29-2:
 	- updated flanking value,
