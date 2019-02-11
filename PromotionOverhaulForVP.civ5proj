@@ -69,6 +69,11 @@ Look into Credits and Changelog for more information.</Description>
         <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-UCS.sql</FileName>
       </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-MUCfVP.sql</FileName>
+      </Action>
     </ModActions>
     <ModContent>
     </ModContent>
@@ -87,6 +92,10 @@ Look into Credits and Changelog for more information.</Description>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Changelog.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-MUCfVP.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

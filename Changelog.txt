@@ -5,27 +5,33 @@
 Promotion Overhaul for Vox Populi changelog:
 v13:
 - text:
-	- massive renaming (especially air promotions),
+	- massive renaming (especially air promotions); many new promotions names and some old ones also are changed,
 	- shortened names for extremely long promotion names,
 	- corrected/rearranged few most complicated promotion descriptions,
-	- reworked Cargo and Flight Deck promotions style; added ICON_PLUS for Cargo,
-	- added ICON_SWAP for Range,
-	- added ICON_RELIGION_PANTHEON for Interception,
-	- added ICON_SILVER_FIST for Evasion chance,
-	- many corrections.
+	- rearranged some pedia categories,
+	- reworked Cargo and Flight Deck promotions style,
+	- reworked Coastal Rider and Boarded promotions style,
+	- new icons (ICON_PLUS for Cargo, ICON_SWAP for Range, ICON_RELIGION_PANTHEON for Interception, ICON_SILVER_FIST for Evasion),
+	- reduced spaces between icons for better frame fitting,
+	- now RCS and CS abbreviations are used instead of full words; Defense/Offense Bonus/Malus is now Defensive/Offensive CS/RCS,
+	- highliting opitimization: now more important text parts are highlighted; no more whole text highlighted when not necessary,
+	- deleted "and" between different abilities (f.e. +1 Move and +10% CS); now "." is used,
+	- now order changed: special abilities like Move, Sight are placed before CS/RCS bonuses; super special abilities are in front,
+	- many important fixes and corrections; unification of text style.
 - ui:
 	- added more coloured promotion names,
 	- changed colouring palette,
 	- promotion description highlighting is now yellow instead of green,
 	- "vs" word is now highlighted,
-	- "lost on promotion" part is now marked with red,
-	- technology name is now highlited with light blue and added science icon.
+	- "lost on promotion" part is now highlighted with red,
+	- technology name is now highlited with light blue; added science icon.
 - code:
-	- ICON_MOVES inasted of ICON_ARROW_RIGHT,
-	- cleaned sql file.
+	- ICON_MOVES instead of ICON_ARROW_RIGHT,
+	- cleaned sql file,
+	- deleted unnecessary/dupplicated code.
 - added:
-	- added Atlatl Strike, Air Targetting III and Air Skirmisher promotion descriptions,
-	- added compatibility with MUCfVP.
+	- added Atlatl Strike, Air Targetting III, Air Skirmisher, Imperialism, Military Tradition and Regimental Tradition promotion descriptions,
+	- added compatibility with MUCfVP (now only for Atlatl Strike).
 
 v12:
 - updated and fixed all issues up to VP 1-29-2:
