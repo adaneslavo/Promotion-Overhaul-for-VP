@@ -31,8 +31,9 @@ v13:
 	- cleaned sql file,
 	- deleted unnecessary/dupplicated code.
 - added:
-	- added Atlatl Strike, Air Targetting III, Air Skirmisher, Imperialism, Military Tradition and Regimental Tradition promotion descriptions,
-	- added compatibility with MUCfVP (now only for Atlatl Strike).
+	- Atlatl Strike, Air Targetting III, Air Skirmisher, Imperialism, Military Tradition and Regimental Tradition promotion descriptions,
+	- compatibility with MUCfVP (now only for Atlatl Strike),
+	- compatibility to new UCSs from v4.
 
 v12:
 - updated and fixed all issues up to VP 1-29-2:
