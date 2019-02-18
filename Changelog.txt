@@ -3,6 +3,12 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v14:
+- adjusted to VP 2-17:
+	- updated influence value for diplomatic promotions,
+	- added missing PediaEntry and PediaType info for UCS part,
+	- compatibility fixes.
+
 v13:
 - text:
 	- massive renaming (especially air promotions); many new promotions names and some old ones are also changed,
