@@ -253,7 +253,7 @@ WHERE Type = 'PO-UCS' AND EXISTS (SELECT * FROM MinorCivilizations WHERE Type='M
 
 	INSERT INTO Language_en_US 
 				(Tag,									Text)
-	SELECT		'TXT_KEY_PROMOTION_AMBRACIA_HELP',		'Unit gains +5% [ICON_PRODUCTION] Production [COLOR:255:230:85:255]if unit is Garrisoned on Land[ENDCOLOR].'
+	SELECT		'TXT_KEY_PROMOTION_AMBRACIA_HELP',		'Unit gains +5% [ICON_PRODUCTION] Production if unit [COLOR:255:230:85:255]is Garrisoned on Land[ENDCOLOR].'
 	WHERE EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-UCS' AND Value= 1);
 
 	INSERT INTO Language_en_US 
