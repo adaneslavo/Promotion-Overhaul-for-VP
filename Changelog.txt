@@ -3,7 +3,13 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
-- added full compatibility for MUCfVP,
+v16:
+- compatibility for VP from 5-19 to 12-20.
+- small typos corrections,
+- internal structure fixes,
+- tons of values and descriptions corrections,
+- one name change: Conscript --> Enlistment,
+- inverted Helplessness I with III.
 
 v15:
 - compatibility:
