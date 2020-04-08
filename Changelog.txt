@@ -3,6 +3,11 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v17:
+- compatibility for VP from 1-11 to 4-7;
+- added compatibility with ENWfVP and MWfVP;
+- reverted blue color to green; blue was never good imo;
+
 v16:
 - compatibility for VP from 5-19 to 12-20.
 - small typos corrections,
