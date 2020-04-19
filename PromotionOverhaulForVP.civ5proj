@@ -5,10 +5,10 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>17</ModVersion>
+    <ModVersion>18</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP 4-7.
+    <Description>Promotion Overhaul for VP 4-17.
 Compatible with UCS v4.
 Compatible with ENW v1.6.12.1.
 Compatible with MW v0.6.
