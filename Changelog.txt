@@ -3,6 +3,13 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v19:
+- corrected Ski Infantry help text;
+- compatibility with VP 6-19 and MW v0.8;
+
+v18:
+- compatibility with VP 4-17;
+
 v17:
 - compatibility for VP from 1-11 to 4-7;
 - added compatibility with ENWfVP and MWfVP;
