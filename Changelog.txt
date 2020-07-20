@@ -3,7 +3,10 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
-v19.1
+v20:
+- compatibility with MW v0.8.3;
+
+v19.1:
 - some typo fixes from @JohnnyNT;
 
 v19:
