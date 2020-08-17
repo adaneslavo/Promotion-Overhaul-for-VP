@@ -3,6 +3,10 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v21:
+- compatibility with VP 8-16;
+- added compatibility with EAW from @Asterix Rage;
+
 v20:
 - compatibility with MW v0.8.3;
 

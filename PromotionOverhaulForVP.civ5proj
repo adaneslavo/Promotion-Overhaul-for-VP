@@ -5,12 +5,12 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>20</ModVersion>
+    <ModVersion>21</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP 6-19.
+    <Description>Promotion Overhaul for VP 8-16.
 Compatible with UCS v4.
-Compatible with ENW v1.6.12.1.
+Compatible with ENW v1.6.13.
 Compatible with MW v0.8.3.
 
 Look into Credits and Changelog for more information.</Description>
@@ -79,6 +79,11 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-EAW.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-MW.sql</FileName>
       </Action>
       <Action>
@@ -104,6 +109,10 @@ Look into Credits and Changelog for more information.</Description>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Changelog.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-EAW.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
