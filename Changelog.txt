@@ -5,10 +5,10 @@
 Promotion Overhaul for Vox Populi changelog:
 v23:
 - compatibility with latest VP 7-1-3 (Commando and Attack(25));
-- compatibility with MW (currently no effect on game);
-- compatibility with ENW (Dive I-II, Hull I-III, Wolfpack III);
-- compatibility with MB (Skillful I-III);
-- compatibility with Convienent Start (Created);
+- compatibility with MUCfVP (currently no effect on game);
+- compatibility with latest ENW (Dive I-II, Hull I-III, Wolfpack III);
+- new compatibility with MB (Skillful I-III);
+- new compatibility with CIV Linked GGs (Created);
 
 v22:
 - compatibility with MW v0.10 rev. 7;

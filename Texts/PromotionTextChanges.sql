@@ -1014,29 +1014,30 @@ UPDATE Language_en_US SET Text = '+10%[ICON_STRENGTH]CS. +2 XP [COLOR:255:230:85
 UPDATE Language_en_US SET Text = '60%[ICON_ARROW_LEFT]Withdrawal Chance against Melee Attack. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE_HELP_I';
 UPDATE Language_en_US SET Text = '+25%[ICON_STRENGTH]Offensive CS.' WHERE Tag = 'TXT_KEY_PROMOTION_KNOCKOUT_III_HELP';
 
+
 /*
-CS compatibility patch!
-0 = Disabled disregarding if it detects CS.
-1 = Enabled if it detects the CS.
+CIV Linked GGs compatibility patch!
+0 = Disabled disregarding if it detects CIV Linked GGs.
+1 = Enabled if it detects the CIV Linked GGs.
 2 = Disabled until it detects something! (Default)
 */
 
 INSERT INTO COMMUNITY	
 		(Type,			Value)
-VALUES	('PO-CS', 		2);
+VALUES	('PO-CIV-L-GG', 		2);
 
 UPDATE COMMUNITY
 SET Value = '1'
-WHERE Type = 'PO-CS' AND EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_CREATED') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CS' AND Value= 0);
+WHERE Type = 'PO-CIV-L-GG' AND EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_CREATED') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CIV-L-GG' AND Value= 0);
 
 -- Main Compatibility Code
 	-- updating texts for new promotions
 	------------------------------
 	-- Promotion Names
 	------------------------------
-	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Created[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-MW' AND Value= 1);
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Created[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CIV-L-GG' AND Value= 1);
 	------------------------------
 	-- Promotion Help
 	------------------------------
-	UPDATE Language_en_US SET Text = 'Initial promotion. Ignore it.' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CS' AND Value= 1);
+	UPDATE Language_en_US SET Text = 'Initial promotion. Ignore it.' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CIV-L-GG' AND Value= 1);
 
