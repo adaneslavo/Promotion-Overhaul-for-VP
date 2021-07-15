@@ -3,6 +3,12 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v24:
+- updated promotions changes made by VP in last couple of updates (Trailblaizer, Dogfighting, Interception, Strafing Run etc.);
+- added "+" to Withdrawal Cahance;
+- added "Railroads" word in addition to Roads;
+- small fixes;
+
 v23:
 - compatibility with latest VP 7-1-3 (Commando and Attack(25));
 - compatibility with MUCfVP (currently no effect on game);
