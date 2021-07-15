@@ -5,13 +5,14 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>21</ModVersion>
+    <ModVersion>23</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP 8-16.
+    <Description>Promotion Overhaul for VP 7-1-3.
 Compatible with UCS v4.
-Compatible with ENW v1.6.13.
-Compatible with MW v0.8.3.
+Compatible with ENW v2.1.
+Compatible with EAW v1,9.
+Compatible with MW v0.12.
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
@@ -84,12 +85,17 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-MW.sql</FileName>
+        <FileName>Compatibility/PO-MB.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-MUCfVP.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-MW.sql</FileName>
       </Action>
     </ModActions>
     <ModContent>
@@ -117,6 +123,10 @@ Look into Credits and Changelog for more information.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Compatibility\PO-ENW.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-MB.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

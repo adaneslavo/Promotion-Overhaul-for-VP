@@ -56,6 +56,7 @@ UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Forest Tribe[ENDCOLOR]' 
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Blood Ritual[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_KILL_HEAL';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Knockout I[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_KNOCKOUT_I';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Knockout II[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_KNOCKOUT_II';
+UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Knockout III[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_KNOCKOUT_III';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Kaniengehawa[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_MOHAWK';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Mechanized Division[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_ARMOR';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Infantry Division[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_LIGHTNING_WARFARE_GUN';
@@ -81,7 +82,7 @@ UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Steam Powered[ENDCOLOR]'
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Trade Mission[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_TRADE_MISSION_BONUS';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Escape[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Power[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS';
-UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Gaa�Paa[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
+UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Gaa-Paa[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ATTACK_BONUS_SWEDEN';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Field I[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_FIELD_I';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Field II[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_FIELD_II';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Field III[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_FIELD_III';
@@ -311,6 +312,7 @@ UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Jinete[ENDCOLOR]' WHERE 
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Repeating Crossbow[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_REPEATER';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Naval Siege[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_NAVAL_SIEGE';
 UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Iklwa[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_IKLWA';
+UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Commando[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE_I';
 
 UPDATE Language_en_US SET Text = '[COLOR:250:100:100:255]Submarine Nets[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_BIG_CITY_PENALTY';
 UPDATE Language_en_US SET Text = '[COLOR:250:100:100:255]Helplessness III[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_BARBARIAN_PENALTY_I';
@@ -607,6 +609,8 @@ UPDATE UnitPromotions SET PediaType = 'PEDIA_SHARED' WHERE Type = 'PROMOTION_IMP
 UPDATE UnitPromotions SET PediaType = 'PEDIA_MOUNTED' WHERE Type = 'PROMOTION_ROUGH_TERRAIN_HALF_TURN';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_RANGED' WHERE Type = 'PROMOTION_SLINGER';
 UPDATE UnitPromotions SET PediaType = 'PEDIA_RANGED' WHERE Type = 'PROMOTION_REPEATER';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_SCOUTING' WHERE Type = 'PROMOTION_WITHDRAW_BEFORE_MELEE_I';
+UPDATE UnitPromotions SET PediaType = 'PEDIA_SCOUTING' WHERE Type = 'PROMOTION_KNOCKOUT_III';
 ------------------------------
 -- Promotion Help Definitions (new help texts which didn't exist before)
 ------------------------------
@@ -1007,3 +1011,32 @@ UPDATE Language_en_US SET Text = 'Unit inflicts 5 Damage to all Enemy Units [COL
 UPDATE Language_en_US SET Text = '50%[ICON_ARROW_LEFT]Withdrawal Chance against Melee Attack. +15%[ICON_STRENGTH]Offensive CS. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ALHAMBRA_HELP';
 UPDATE Language_en_US SET Text = '+40%[ICON_STRENGTH]CS and +40%[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]in Open Terrain[ENDCOLOR]. -20%[ICON_STRENGTH]CS and -20%[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]in Rough Terrain[ENDCOLOR]. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ROUGH_TERRAIN_HALF_TURN_HELP';
 UPDATE Language_en_US SET Text = '+10%[ICON_STRENGTH]CS. +2 XP [COLOR:255:230:85:255]on Land Territory of Major Civilization[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_IKLWA_HELP';
+UPDATE Language_en_US SET Text = '60%[ICON_ARROW_LEFT]Withdrawal Chance against Melee Attack. [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_WITHDRAW_BEFORE_MELEE_HELP_I';
+UPDATE Language_en_US SET Text = '+25%[ICON_STRENGTH]Offensive CS.' WHERE Tag = 'TXT_KEY_PROMOTION_KNOCKOUT_III_HELP';
+
+/*
+CS compatibility patch!
+0 = Disabled disregarding if it detects CS.
+1 = Enabled if it detects the CS.
+2 = Disabled until it detects something! (Default)
+*/
+
+INSERT INTO COMMUNITY	
+		(Type,			Value)
+VALUES	('PO-CS', 		2);
+
+UPDATE COMMUNITY
+SET Value = '1'
+WHERE Type = 'PO-CS' AND EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_CREATED') AND NOT EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CS' AND Value= 0);
+
+-- Main Compatibility Code
+	-- updating texts for new promotions
+	------------------------------
+	-- Promotion Names
+	------------------------------
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Created[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-MW' AND Value= 1);
+	------------------------------
+	-- Promotion Help
+	------------------------------
+	UPDATE Language_en_US SET Text = 'Initial promotion. Ignore it.' WHERE Tag = 'TXT_KEY_PROMOTION_CREATED_HELP' AND EXISTS (SELECT * FROM COMMUNITY WHERE Type='PO-CS' AND Value= 1);
+
