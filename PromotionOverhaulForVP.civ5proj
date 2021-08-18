@@ -5,14 +5,16 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>23</ModVersion>
+    <ModVersion>24</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
     <Description>Promotion Overhaul for VP 7-1-3.
 Compatible with UCS v4.
+Compatible with EE v4.
 Compatible with ENW v2.1.
 Compatible with EAW v1,9.
 Compatible with MW v0.12.
+Compatible with MB.
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
@@ -30,6 +32,55 @@ Look into Credits and Changelog for more information.</Description>
         <Type>Mod</Type>
         <Name>Unique City-States</Name>
         <Id>b2eb6d1e-1fcb-4a0d-829c-51691aa3183a</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enhanced Air Warfare 4VP</Name>
+        <Id>871da714-b2c6-49e9-8882-57489f501dba</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enhanced Naval Warfare 4VP</Name>
+        <Id>675ba5ec-dc5a-400f-9864-8170568d04e5</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Recruitment Office</Name>
+        <Id>b78bcb1e-7a4a-421c-bc4d-46bd727f1761</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>More Wonder for VP</Name>
+        <Id>3e151552-1683-4881-b736-8ee89226f599</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>More Unique Components for VP</Name>
+        <Id>259c3593-34dd-4fdd-bd7d-8ed67cc0797c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Enlightment Era for VP</Name>
+        <Id>87b2deae-83cb-9b88-9017-79e741d3739c</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>CIV-linked GGs and GAs</Name>
+        <Id>fe245559-0525-41bb-9e1c-b281e018b5fc</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
@@ -70,6 +121,11 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-MB.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-UCS.sql</FileName>
       </Action>
       <Action>
@@ -85,7 +141,7 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-MB.sql</FileName>
+        <FileName>Compatibility/PO-EE.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -119,6 +175,10 @@ Look into Credits and Changelog for more information.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Compatibility\PO-EAW.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-EE.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>

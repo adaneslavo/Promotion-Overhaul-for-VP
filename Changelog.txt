@@ -4,9 +4,14 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 v24:
-- updated promotions changes made by VP in last couple of updates (Trailblaizer, Dogfighting, Interception, Strafing Run etc.);
-- added "+" to Withdrawal Cahance;
-- added "Railroads" word in addition to Roads;
+- updated promotions changes made by VP in last couple of updates and missed in v23 (Trailblaizer, Dogfighting, Interception, Strafing Run, Kris (2 promotions), etc.);
+- updated ENW version of Depth Charges I and andded Depth Charges II;
+- added "+" to Withdrawal Chances;
+- added "Railroads" keyword in addition to Roads;
+- fixed Overrun description;
+- added comaptibility with EE promotions;
+- added missing references to other mods (upsi);
+- fixed Tag issue between PO and ENW;
 - small fixes;
 
 v23:
