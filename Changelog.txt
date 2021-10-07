@@ -6,6 +6,7 @@ Promotion Overhaul for Vox Populi changelog:
 v24:
 - updated promotions changes made by VP in last couple of updates and missed in v23 (Trailblaizer, Dogfighting, Interception, Strafing Run, Kris (2 promotions), etc.);
 - updated ENW version of Depth Charges I and andded Depth Charges II;
+- updated VP 1.0.3 changes (Dopelsoldner, Impi's, Kris', Atlatl, Heavy Asault etc.);
 - added "+" to Withdrawal Chances;
 - added "Railroads" keyword in addition to Roads;
 - fixed Overrun description;
