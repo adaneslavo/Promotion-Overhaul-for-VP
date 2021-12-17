@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v25:
+- updated to VP 1.2.1;
+
 v24:
 - updated promotions changes made by VP in last couple of updates and missed in v23 (Trailblaizer, Dogfighting, Interception, Strafing Run, Kris (2 promotions), etc.);
 - updated ENW version of Depth Charges I and andded Depth Charges II;
