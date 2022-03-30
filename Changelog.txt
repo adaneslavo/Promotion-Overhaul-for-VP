@@ -3,6 +3,11 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v26:
+- updated for VP 2.0 (new promotions and compatibility);
+- updated Pedia categories;
+- changed "+XX HP" to "+XX HP Heal" for better understanding (its heal not an upgrade);
+
 v25:
 - updated to VP 1.2.1;
 
