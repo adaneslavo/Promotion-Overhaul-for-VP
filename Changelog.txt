@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v29:
+- multiple updates, fixes up to VP 2.6;
+
 v28:
 - added compatibility to UCS v8;
 - fixed a bug caused by VP.
