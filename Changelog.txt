@@ -3,6 +3,12 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v30:
+- optimized "Lost on upgrade" text addition to be automatic (thanks @N.Core);
+- "adavance" correction (thanks @Jan Sobus);
+- deleted duplicated "Atlatl Strike" text update (thanks @Jan Sobus);
+- fixed "Lightning Warfare" promotion texts (thanks @Jan Sobus);
+
 v29:
 - multiple updates, fixes up to VP 2.6;
 
