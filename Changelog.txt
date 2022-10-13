@@ -3,6 +3,13 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v32:
+- added new "Skirmisher Doctrine" from VP 2.7;
+- added missing "Operational Range" (Thule Air Base) promotion from More Wonders;
+- added 2 new promotions from MW v0.16;
+- simplified numerous promotions (deleted yield names);
+- fixed pedia type for "Altitude Training";
+
 v31:
 - changed "Holy Mountain" to "Mahaprasthanika Parva";
 - updated "Altitude Training" for MW v0.15;
