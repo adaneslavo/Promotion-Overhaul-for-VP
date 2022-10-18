@@ -3,6 +3,10 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v33:
+- added new setting allowing to choose default or improved promotion name colouring;
+- fixed Skirmisher Doctrine;
+
 v32:
 - added new "Skirmisher Doctrine" from VP 2.7;
 - added missing "Operational Range" (Thule Air Base) promotion from More Wonders;
