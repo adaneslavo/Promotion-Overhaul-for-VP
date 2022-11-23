@@ -3,6 +3,10 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v34:
+- added new promotion "Yerba de la Fleche" from MW;
+- compatibility with VP 3.0!
+
 v33:
 - added new setting allowing to choose default or improved promotion name colouring;
 - fixed Skirmisher Doctrine;
