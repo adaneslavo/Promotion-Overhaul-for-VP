@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v36:
+- compatibilities for VP 3.4 and 3.6;
+
 v35:
 - fixed Trailbla(i)zer typo;
 - fixed Ski Infantry error in description;
