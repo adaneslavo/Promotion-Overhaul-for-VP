@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v37:
+- updated compatibility for UCS promotions (new promotions and few fixes);
+
 v36:
 - compatibilities for VP 3.4 and 3.6;
 
