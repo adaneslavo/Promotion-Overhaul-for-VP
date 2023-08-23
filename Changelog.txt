@@ -3,6 +3,19 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v40 (upcoming):
+- added new promotions for UCS v15;
+
+v39:
+- added new promotion and changes from VP v3.8;
+- deleted few remaining "Lost after unit upgrade" texts;
+- promotion text mentioning modifiers with "below", "above" or "at full" now have "Offensive CS" intead of "CS" (and RCS);
+- added mising part of descritpion for Medic General promotion (Khan);
+- Bushido promotions now have (B) in their name, and Kris' have (K);
+- all Clermont promotions now have (C) in their names;
+- fixed Deus Vult! description;
+- minor icons fixes;
+
 v38:
 - updated compatibility for UCS v14 promotions (new promotions and few fixes);
 - fixed Impi's Ranged Support Fire promotion description;
