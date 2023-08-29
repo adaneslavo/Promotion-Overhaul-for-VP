@@ -5,6 +5,7 @@
 Promotion Overhaul for Vox Populi changelog:
 v40 (upcoming):
 - added new promotions for UCS v15;
+- "Faster Worker" is now "Organized";
 
 v39:
 - added new promotion and changes from VP v3.8;
