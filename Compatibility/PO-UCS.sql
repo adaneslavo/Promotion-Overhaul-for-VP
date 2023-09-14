@@ -1,3 +1,5 @@
+--TEST
+
 /*
 UCS compatibility patch!
 0 = Disabled disregarding if its detects UCS by Enginseer.
