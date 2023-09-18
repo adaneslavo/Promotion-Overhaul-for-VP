@@ -3,6 +3,11 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v41:
+- fixed Accuracy/Barrage mess;
+- added new name colours for special promotions picked from unique pools (Kris, Bushido, Clermont) or unique promotion trees (Sikh); deleted prefix letters;
+- fixed "Dastar Bunga" name (was without "D");
+
 v40 (upcoming):
 - added new promotions for UCS v15;
 - "Faster Worker" is now "Organized";
