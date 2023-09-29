@@ -5,7 +5,7 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>41</ModVersion>
+    <ModVersion>42</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
     <Description>Promotion Overhaul for VP 3.10.X
@@ -39,13 +39,6 @@ Look into Credits and Changelog for more information.</Description>
         <Type>Mod</Type>
         <Name>Enhanced Air Warfare 4VP</Name>
         <Id>871da714-b2c6-49e9-8882-57489f501dba</Id>
-        <MinVersion>0</MinVersion>
-        <MaxVersion>999</MaxVersion>
-      </Association>
-      <Association>
-        <Type>Mod</Type>
-        <Name>Enhanced Naval Warfare 4VP</Name>
-        <Id>675ba5ec-dc5a-400f-9864-8170568d04e5</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
@@ -117,11 +110,6 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-ENW.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-EAW.sql</FileName>
       </Action>
       <Action>
@@ -165,10 +153,6 @@ Look into Credits and Changelog for more information.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Compatibility\PO-EE.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Compatibility\PO-ENW.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
