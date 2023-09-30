@@ -5,6 +5,7 @@
 Promotion Overhaul for Vox Populi changelog:
 v42:
 - Great Merge has arrived so... better kill me...;
+- in the meantime fixed many wrong values and corrected missing bonuses or these that are nonexistent anymore;
 - deleted ENW references and compatibility files;
 
 v41:
