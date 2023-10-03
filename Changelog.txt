@@ -7,6 +7,9 @@ v42:
 - Great Merge has arrived so... better kill me...;
 - in the meantime fixed many wrong values and corrected missing bonuses or these that are nonexistent anymore;
 - deleted ENW references and compatibility files;
+- now negative promotions (or sometimes mixed) have negative things marked red (were gold);
+- many fixes to RCS-CS errors;
+- swapped [ICON_VIEW_CITY] with [ICON_VP_SIGHT];
 
 v41:
 - fixed Accuracy/Barrage mess;
