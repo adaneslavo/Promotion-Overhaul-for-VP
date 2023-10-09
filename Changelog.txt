@@ -3,8 +3,11 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v43:
+- ???
+
 v42:
-- Great Merge has arrived so... better kill me...;
+- Great Merge has arrived so...:
 	- in the meantime fixed many wrong values and corrected missing bonuses or these that are nonexistent anymore;
 	- adjusted Pedia categories;
 	- fixed and changed few names;
@@ -12,13 +15,14 @@ v42:
 - now negative promotions (or sometimes mixed) have negative things marked red (were gold);
 - many fixes to RCS-CS errors;
 - swapped [ICON_VIEW_CITY] with [ICON_VP_SIGHT];
+- many minor chages;
 
 v41:
 - fixed Accuracy/Barrage mess;
 - added new name colours for special promotions picked from unique pools (Kris, Bushido, Clermont) or unique promotion trees (Sikh); deleted prefix letters;
 - fixed "Dastar Bunga" name (was without "D");
 
-v40 (upcoming):
+v40:
 - added new promotions for UCS v15;
 - "Faster Worker" is now "Organized";
 - "Knockback I" is now "Fasimba";
