@@ -4,7 +4,8 @@
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
 v43:
-- ???
+- added changes to MW and UCS parts;
+- added more corrections to main part;
 
 v42:
 - Great Merge has arrived so...:
