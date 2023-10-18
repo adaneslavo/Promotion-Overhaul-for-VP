@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v44:
+- ???
+
 v43:
 - added changes to MW and UCS parts;
 - added more corrections to main part;
@@ -18,7 +21,7 @@ v42:
 - swapped [ICON_VIEW_CITY] with [ICON_VP_SIGHT];
 - many minor chages;
 
-v41:
+v41 (last for VP 3.10.X):
 - fixed Accuracy/Barrage mess;
 - added new name colours for special promotions picked from unique pools (Kris, Bushido, Clermont) or unique promotion trees (Sikh); deleted prefix letters;
 - fixed "Dastar Bunga" name (was without "D");
