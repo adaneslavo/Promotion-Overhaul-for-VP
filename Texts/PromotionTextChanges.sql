@@ -1169,7 +1169,7 @@ UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_SILENT_HUNTER_HELP' WHERE Ty
 	-- (left vanilla) UPDATE UnitPromotions SET Help = 'TXT_KEY_PROMOTION_FOLIAGE_IMPASSABLE_HELP' WHERE Type = 'PROMOTION_FOLIAGE_IMPASSABLE';
 
 
-UPDATE UnitPromotions SET SimpleHelpText = 0 WHERE Description != Help;
+UPDATE UnitPromotions SET SimpleHelpText = NULL WHERE Description != Help;
 ------------------------------
 -- Promotion Help Changes
 ------------------------------
