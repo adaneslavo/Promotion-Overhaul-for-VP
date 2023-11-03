@@ -5,7 +5,7 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>44</ModVersion>
+    <ModVersion>45</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
     <Description>Promotion Overhaul for VP 4.2.X
@@ -76,6 +76,13 @@ Look into Credits and Changelog for more information.</Description>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>Additional Tweaks for VP</Name>
+        <Id>af808977-d774-48c3-9b02-a7d23c34cc3f</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
     </ModReferences>
     <ReloadLandmarkSystem>false</ReloadLandmarkSystem>
     <ReloadUnitSystem>false</ReloadUnitSystem>
@@ -99,12 +106,22 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-MB.sql</FileName>
+        <FileName>Compatibility/PO-MW.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-UCS.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-AT.sql</FileName>
+      </Action>
+      <Action>
+        <Set>OnModActivated</Set>
+        <Type>UpdateDatabase</Type>
+        <FileName>Compatibility/PO-MB.sql</FileName>
       </Action>
       <Action>
         <Set>OnModActivated</Set>
@@ -120,11 +137,6 @@ Look into Credits and Changelog for more information.</Description>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
         <FileName>Compatibility/PO-MUCfVP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-MW.sql</FileName>
       </Action>
     </ModActions>
     <ModContent>
@@ -144,6 +156,10 @@ Look into Credits and Changelog for more information.</Description>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Changelog.txt">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-AT.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
