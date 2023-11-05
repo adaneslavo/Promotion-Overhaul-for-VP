@@ -5,6 +5,7 @@
 Promotion Overhaul for Vox Populi changelog:
 v45:
 - added compatibility with new mod: Additional Tweaks for VP;
+- replaced some [ICON_ARROW_RIGHT] with [ICON_MOVES] for clarity;
 
 v44:
 - added compatibility with MW v21 and UCS v15.10;
