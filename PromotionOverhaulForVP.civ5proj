@@ -9,11 +9,12 @@
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
     <Description>Promotion Overhaul for VP 4.2.X
-Compatible with UCS v15.
-Compatible with EE v4.
+Compatible with MW v21.
+Compatible with UCS v16.
+Compatible with AT v2
 Compatible with EAW v1,9.
-Compatible with MW v20.
 Compatible with MB.
+Compatible with EE v4.
 
 Look into Credits and Changelog for more information.</Description>
     <Authors>adan_eslavo</Authors>
@@ -80,6 +81,139 @@ Look into Credits and Changelog for more information.</Description>
         <Type>Mod</Type>
         <Name>Additional Tweaks for VP</Name>
         <Id>af808977-d774-48c3-9b02-a7d23c34cc3f</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Cambodia</Name>
+        <Id>7b2d759e-3366-41c7-8e0c-b4ebfe1c79g2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Canada</Name>
+        <Id>8562c016-f5bb-40f1-b37e-d3b40d3fg13e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Chola</Name>
+        <Id>bb769714-1243-4d42-9c13-bdbb37925449</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Goths</Name>
+        <Id>161f4dde-bbb8-41d2-8999-30250d9ba231</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Inuit</Name>
+        <Id>dcdaabd2-b224-4680-bdc0-d8692a1a1249</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Israel</Name>
+        <Id>35e27828-cf22-4aec-b087-08169fa4e430</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Macedon</Name>
+        <Id>d4d41747-f4f3-4861-9346-928634c8c68f</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Nubia</Name>
+        <Id>4bd78158-67ce-4bd5-9b43-c7d4b1503a96</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Philippines</Name>
+        <Id>2b5ad645-8094-4ed7-a488-1e49eb9277aa</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Phoenicia</Name>
+        <Id>7762c016-f5bb-40f1-b37e-d3b40d4gh23e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Sumer</Name>
+        <Id>7dbedfbe-cce4-49cd-a2bc-3507e38f4bd4</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Timurids</Name>
+        <Id>cc3e1671-2832-40dc-9bfd-8e053d3b76b2</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@pineappledan's) Tlingit</Name>
+        <Id>bb769714-1243-4d42-9c13-bdbb55405064</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Ainu</Name>
+        <Id>3499cc3d-2073-42c9-9bf0-f39db982e741</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Basques</Name>
+        <Id>63b1732e-5fff-449e-a5bc-17ab5ed71e3a</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Corsica</Name>
+        <Id>55abc424-63ea-4858-a3e5-15e8cca4890b</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Ireland</Name>
+        <Id>5bc5cebf-f7fc-4cf7-8669-726e58ad476e</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Kyivian Rus</Name>
+        <Id>a17e6c5d-d00b-4650-a09b-61c34a299f51</Id>
+        <MinVersion>0</MinVersion>
+        <MaxVersion>999</MaxVersion>
+      </Association>
+      <Association>
+        <Type>Mod</Type>
+        <Name>(@gwennog's) Louisiana</Name>
+        <Id>3ea46c4f-6e13-46bf-ba28-71a3ffa85b53</Id>
         <MinVersion>0</MinVersion>
         <MaxVersion>999</MaxVersion>
       </Association>
@@ -160,6 +294,10 @@ Look into Credits and Changelog for more information.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Compatibility\PO-AT.sql">
+      <SubType>Lua</SubType>
+      <ImportIntoVFS>False</ImportIntoVFS>
+    </Content>
+    <Content Include="Compatibility\PO-CIV.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
