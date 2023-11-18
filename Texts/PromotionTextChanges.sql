@@ -1219,9 +1219,9 @@ UPDATE Language_en_US SET Text = '+25%[ICON_RANGE_STRENGTH]Offensive RCS [COLOR:
 UPDATE Language_en_US SET Text = '+5 HP Heal [COLOR:255:230:85:255]on Heal to all adjacent Friendly Units[ENDCOLOR]. Unit has more[ICON_STRENGTH]CS [COLOR:255:230:85:255]on lower Health[ENDCOLOR]. +10 HP Heal [COLOR:255:230:85:255]on Kill[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BENEVOLENCE_HELP';
 UPDATE Language_en_US SET Text = '-75%[ICON_RANGE_STRENGTH]Offensive RCS [COLOR_NEGATIVE_TEXT]vs Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BIG_CITY_PENALTY_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR:255:230:85:255]can Move and Attack again[ENDCOLOR] after Attack.' WHERE Tag = 'TXT_KEY_PROMOTION_BLITZ_HELP';
-UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. [COLOR:255:230:85:255]After Attack[ENDCOLOR] Defending Enemy Unit is Boarded, which [COLOR:255:230:85:255]reduces its[ICON_MOVES]Movement Points by 1[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP';
-UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. Unit [COLOR:255:230:85:255]is immune to Boarding[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP';
-UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. [COLOR:255:230:85:255]After Attack[ENDCOLOR] Defending Enemy Unit is Boarded, which [COLOR:255:230:85:255]reduces its[ICON_MOVES]Movement Points by 2[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP';
+UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. [COLOR:255:230:85:255]After Attack[ENDCOLOR] Defending Enemy Unit gains [COLOR:250:100:100:255]Boarded[ENDCOLOR] promotion, which [COLOR:255:230:85:255]reduces its[ICON_MOVES]Movement Points by 1[ENDCOLOR] for 1 turns.' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_1_HELP';
+UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. Unit [COLOR:255:230:85:255]is immune to [ENDCOLOR][COLOR:100:155:60:255]Boarded[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_2_HELP';
+UPDATE Language_en_US SET Text = '+15%[ICON_STRENGTH]CS. [COLOR:255:230:85:255]After Attack[ENDCOLOR] Defending Enemy Unit gains [COLOR:250:100:100:255]Boarded[ENDCOLOR] promotion, which [COLOR:255:230:85:255]reduces its[ICON_MOVES]Movement Points by 2[ENDCOLOR] for 1 turns.' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_3_HELP';
 UPDATE Language_en_US SET Text = 'Unit [COLOR:255:230:85:255]ignores Zone of Control[ENDCOLOR]. +10%[ICON_STRENGTH]Offensive CS [COLOR:255:230:85:255]on Flanking[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOARDING_PARTY_4_HELP';
 UPDATE Language_en_US SET Text = '+10%[ICON_RANGE_STRENGTH]Offensive RCS. +30%[ICON_RANGE_STRENGTH]Offensive RCS [COLOR:255:230:85:255]vs Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOMBARDMENT_1_HELP';
 UPDATE Language_en_US SET Text = '+10%[ICON_RANGE_STRENGTH]Offensive RCS. +30%[ICON_RANGE_STRENGTH]Offensive RCS [COLOR:255:230:85:255]vs Cities[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_BOMBARDMENT_2_HELP';
@@ -1521,8 +1521,3 @@ UPDATE Language_en_US SET Text = '+100%[ICON_ARROW_LEFT]Withdrawal Chance [COLOR
 	-- (left vanilla) UPDATE Language_en_US SET Text = 'Unit loses all remaining[ICON_MOVES]Movement Points [COLOR:255:230:85:255]on Entering Rough Terrain[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ROUGH_TERRAIN_ENDS_HELP';
 	-- (left vanilla) UPDATE Language_en_US SET Text = 'Before melee Attack [COLOR:255:230:85:255]unit performs an additional Range attack[ENDCOLOR] at 50% of its [ICON_STRENGTH]CS. +25%[ICON_STRENGTH]CS [COLOR:255:230:85:255]vs Gunpowder Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_GUNPOWDER_HELP';
 	-- (left vanilla) UPDATE Language_en_US SET Text = '+100%[ICON_STRENGTH]CS [COLOR:255:230:85:255]vs Mounted Units[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ANTI_MOUNTED_II_HELP';
-
-
--- "Lost on upgrade" update
-UPDATE Language_en_US SET Text = Text||' [COLOR_NEGATIVE_TEXT]Lost after unit upgrade[ENDCOLOR].'
-WHERE Tag IN (SELECT Help FROM UnitPromotions WHERE LostWithUpgrade = 1);

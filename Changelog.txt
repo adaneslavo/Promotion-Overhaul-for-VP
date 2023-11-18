@@ -3,6 +3,11 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v46:
+- added compatibility with Gwennog's civilizations;
+- reworked visualisation of Plague related promotions;
+- fixed missing "Lost on upgrade" info;
+
 v45:
 - added compatibility with new mod: Additional Tweaks for VP;
 - replaced some [ICON_ARROW_RIGHT] with [ICON_MOVES] for clarity;
