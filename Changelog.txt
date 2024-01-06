@@ -6,8 +6,10 @@ Promotion Overhaul for Vox Populi changelog:
 v46:
 - added compatibility with Gwennog's civilizations;
 - update for UCS v16;
+- update for VP 4.4 up;
 - reworked visualisation of Plague related promotions;
 - fixed missing "Lost on upgrade" info;
+- added "first" word to withdrawing descriptions;
 - multiple minor tweaks;
 
 v45:
