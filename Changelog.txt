@@ -3,6 +3,20 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v48:
+- updates for VP v4.15.1;
+	- added 2 new promotions: Coastal Artillery and Mare Nostrum;
+	- updated values of Aerial Torpedo and Bomb Rack;
+	- all barbarians' Double Movement promotions are now Ignore Terrain Cost; No longer supports Flood Plains (Marsh Walker);
+	- Amphibious and Woodsman now Ignore Terrain Cost (was Double Movement);
+	- updated Scouting I and II with Embarked Vision and Movement respectively;
+	- moved Scouting III to unused section;
+	- updated Trailblazer I, II and III with multiple balance changes;
+	- updated Frogman (removed River things);
+
+v47:
+- updates for VP 4.6;
+
 v46:
 - added compatibility with Gwennog's civilizations;
 - update for UCS v16;
