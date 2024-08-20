@@ -3,6 +3,9 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v49:
+- brought back War Canoe promotion;
+
 v48:
 - updates for VP v4.15.1;
 	- added 2 new promotions: Coastal Artillery and Mare Nostrum;
