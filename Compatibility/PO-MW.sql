@@ -1,19 +1,10 @@
 --=============================================--
--- MW compatibility check
+-- MW compatibility check (part I)
 --=============================================--
 /* More Wonders */
 INSERT INTO BuildingClasses (Type)
 SELECT		'BUILDINGCLASS_DUMMY_PO_MW'
 WHERE EXISTS (SELECT * FROM UnitPromotions WHERE Type='PROMOTION_MARAE');
-
-CREATE TRIGGER IF NOT EXISTS POCompatibilityMW
-AFTER INSERT ON UnitPromotions
-WHEN NEW.Type = 'PROMOTION_MARAE'
-BEGIN
-    INSERT INTO BuildingClasses (Type)
-	VALUES		('BUILDINGCLASS_DUMMY_PO_MW');
-END;
-
 --=============================================--
 -- MW compatibility changes
 --=============================================--
@@ -52,3 +43,50 @@ END;
 	-- Promotion Help
 	------------------------------
 	UPDATE Language_en_US SET Text = '+1 [ICON_VISION] Sight. Double[ICON_MOVES]Movement and +10%[ICON_STRENGTH]CS/[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]on Hills[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ALTITUDE_TRAINING_HELP' AND EXISTS (SELECT * FROM BuildingClasses WHERE Type='BUILDINGCLASS_DUMMY_PO_MW');
+--=============================================--
+-- MW compatibility trigger (part II)
+--=============================================--
+/* More Wonders */
+/*CREATE TRIGGER IF NOT EXISTS POCompatibilityMW
+AFTER INSERT ON UnitPromotions
+WHEN NEW.Type = 'PROMOTION_MARAE'
+BEGIN
+    INSERT INTO BuildingClasses (Type)
+	VALUES		('BUILDINGCLASS_DUMMY_PO_MW_TRG');
+	
+	------------------------------
+	-- Promotion Names
+	------------------------------
+	-- World Wonders
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Marae[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_MARAE';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Arahurahu[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ARAHURAHU';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Damascus Steel[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_DAMASCUS';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Hidden Artifacts[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_HIDDEN_ARTIFACTS';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Panama Canal[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_PANAMA_CANAL';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Toy Train[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_DARJEELING';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Kamikaze[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SANBO_AIR';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Kamikaze: For the Emperor![ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SANBO_AIR_EFFECT';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Fleet of the Sun[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SANBO_SEA';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Imperial Army[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SANBO_LAND';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]White Sands Facility[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_WHITE_SANDS';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Trans-Siberian Railway[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SIBERIAN_RAILWAY';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Operational Range[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_THULE';
+	
+	-- Buildings
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Yerba de la Fleche[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_FLETCHER';
+	
+	-- Natural Wonders
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Mahaprasthanika Parva[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_KAILASH';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Old Tribes[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_ULURU';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]For the King![ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_SOLOMONS_MINES';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Explosive Mixture[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_DALLOL';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Curiosity[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_CAUSEWAY';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Roof of the World[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_MT_EVEREST';
+	UPDATE Language_en_US SET Text = '[COLOR:100:155:60:255]Revontulet[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_AURORA';
+
+	UPDATE Language_en_US SET Text = '[COLOR:250:100:100:255]Lost in Time and Space[ENDCOLOR]' WHERE Tag = 'TXT_KEY_PROMOTION_BERMUDA_TRIANGLE';
+	------------------------------
+	-- Promotion Help
+	------------------------------
+	UPDATE Language_en_US SET Text = '+1 [ICON_VISION] Sight. Double[ICON_MOVES]Movement and +10%[ICON_STRENGTH]CS/[ICON_RANGE_STRENGTH]RCS [COLOR:255:230:85:255]on Hills[ENDCOLOR].' WHERE Tag = 'TXT_KEY_PROMOTION_ALTITUDE_TRAINING_HELP';
+END;*/

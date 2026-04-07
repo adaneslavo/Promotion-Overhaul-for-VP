@@ -3,6 +3,13 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
+v52?
+- added additional triggers for compatibility checks (now mod order is irrelevant);
+
+v51:
+- adapted to VP 5.2 changes;
+- added Yesir Captives and Quicksand promotions to UCS compatibility part;
+
 v50:
 - updated to VP 5.0;
 - added missing parenthesis;

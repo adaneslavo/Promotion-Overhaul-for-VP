@@ -5,12 +5,12 @@
     <ProjectGuid>{75d2600d-97be-4a19-b4c1-d99125d42d50}</ProjectGuid>
     <Name>(text) Promotion Overhaul for VP</Name>
     <Guid>6f162445-8dd2-4809-b8b4-aa405d4b2107</Guid>
-    <ModVersion>50</ModVersion>
+    <ModVersion>51</ModVersion>
     <Stability>Stable</Stability>
     <Teaser>Promotion Overhaul for VP</Teaser>
-    <Description>Promotion Overhaul for VP 4.2.X
-Compatible with MW v21.
-Compatible with UCS v16.
+    <Description>Promotion Overhaul for VP 5.2.X
+Compatible with MW v24.
+Compatible with UCS v19.
 Compatible with AT v2
 Compatible with EAW v1,9.
 Compatible with MB.
@@ -275,11 +275,6 @@ Look into Credits and Changelog for more information.</Description>
       <Action>
         <Set>OnModActivated</Set>
         <Type>UpdateDatabase</Type>
-        <FileName>Compatibility/PO-MUCfVP.sql</FileName>
-      </Action>
-      <Action>
-        <Set>OnModActivated</Set>
-        <Type>UpdateDatabase</Type>
         <FileName>Texts/Closer.sql</FileName>
       </Action>
     </ModActions>
@@ -320,10 +315,6 @@ Look into Credits and Changelog for more information.</Description>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
     <Content Include="Compatibility\PO-MB.sql">
-      <SubType>Lua</SubType>
-      <ImportIntoVFS>False</ImportIntoVFS>
-    </Content>
-    <Content Include="Compatibility\PO-MUCfVP.sql">
       <SubType>Lua</SubType>
       <ImportIntoVFS>False</ImportIntoVFS>
     </Content>
