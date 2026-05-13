@@ -3,7 +3,10 @@
 -- DateCreated: 12/01/2018
 --------------------------------------------------------------
 Promotion Overhaul for Vox Populi changelog:
-v52?
+v52:
+- moved help texts from MW to PO;
+- added missing Ha Long promotion;
+- added 2 new Knights Hospitaller's promotions;
 - added additional triggers for compatibility checks (now mod order is irrelevant);
 
 v51:
